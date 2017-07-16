@@ -1,17 +1,23 @@
-.dv{
-    background-color: #FFC6C6;
+
+body{
+    background-color: #FFF0F0;
+    width:1500px;
+    margin:auto;
 }
-.hdv{
-    background-color: #FF9999;
+.date{
+    background-color: wheat;
+    margin-left:20%;
+    border: 5px double #FF9999;
+    display:inline-block;
+    color:black;
+    font-size:50px;
 }
 .but {
     border-radius: 13%;
     border: 0px;
-    padding: 2%;
-    opacity: 100%;
 }
 .dec{
-    margin: 2%;
+    margin: 3%;
     color:#FF9999;
     font-family: fantasy;
     font-size: 50;
@@ -20,13 +26,24 @@
 }
 .hd{
     display:inline-block;
-    text-align: top;
-    color:white;
+    font-size:70px;
+    -webkit-text-stroke: 2px black;
+    color: black;
     font:italic;
 }
 .txt{
     background-color: #FFC6C6;
     display:inline-block;
     width:600px;
-    position: relative bottom right;
+    position: absolute;
+    left: 505px;
+    top:1%;
+}
+.reklama{
+    background-color: #FFC6C6;
+    display:inline-block;
+    border:5px black double;
+    position: absolute;
+    left: 1110px;
+    top:1%;
 }

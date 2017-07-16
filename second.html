@@ -1,14 +1,53 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Код вопроса</title>
-        <link rel="stylesheet" href="style.css">
-        <script type="text/javascript" src="forst.js"></script>
-        <link rel="shortcut icon" href="99999.ico" type="image/x-icon">
-    </head>
 
-    <body style="background-color:#FFC6C6">
-        
+<head>
+    <title>Код вопроса</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="99999.ico" type="image/x-icon">
+    <script>
+        function changeCol(color) {
+            var cat = document.getElementById("cat");
+            if (color == 'blue') cat.style.color = '#6C81E6';
+            else cat.style.color = "white";
+        }
+        function answ(ans) {
+            if (ans == 1) result="Ну... Если лев котик, то да";
+            else if (ans == 2) result="Ты дурак чтоль? Где ты там столько увидел?";
+            else result="Что-то ты не шаришь в видах животных...";        
+        }
+    </script>
+</head>
 
-    </body>
+<body>
+    <div style="background-color: #FF9999;background-image:url('fon.jpg');">
+        <img src="cat.jpg" style="margin:1%;float:left;border:5px wheat double;" height="200px" title="Котик">
+        <div style="display:inline-block;">
+            <h2 id="cat" class="hd">Кооооотики!</h2>
+            <div>
+                <button class="but" style="border:2px black double;display:inline-block;margin:1%;font-size:20px;" onclick="changeCol('blue')">Синий кiт</button>
+                <button class="but" style="border:2px black double;display:inline-block;margin:1%;font-size:20px;" onclick="changeCol('notBlue')">Обычный кiт</button>
+            </div>
+        </div>
+        <h3 class="hd" style="font-size:25px;-webkit-text-stroke:0.5px;background-image:url('fon2.jpg');" title="Это риторический вопрос"><i>Привет, ты любишь мурлык?</i></h3>
+    </div>
+    <div style="background-color: #FFC6C6;width:600px;padding:1%;margin:auto;font-size:25px;">
+        <p id="code"></p>
+        <script type="text/javascript">
+            // var br = '<br>';
+             var an = answ.toString();
+            // var a1 = an.substring(0, '{');
+            // var a2 = an.substring('{', an.length);
+            // an = a1 + br + a2;
+            // for (i = 0; i < 3; i++) {
+            //     var a1 = an.substring(0, ';');
+            //     var a2 = an.substring(';', an.length);
+            //     an = a1 + br + a2;
+            // }
+            document.getElementById("code").innerHTML = an;
+        </script>
+    </div>
+    <button class="but" style="margin:1%;font-size:20px;" onClick='location.href="index.html"'>Назад</button>
+</body>
+
 </html>
