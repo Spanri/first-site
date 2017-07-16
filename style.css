@@ -1,0 +1,32 @@
+.dv{
+    background-color: #FFC6C6;
+}
+.hdv{
+    background-color: #FF9999;
+}
+.but {
+    border-radius: 13%;
+    border: 0px;
+    padding: 2%;
+    opacity: 100%;
+}
+.dec{
+    margin: 2%;
+    color:#FF9999;
+    font-family: fantasy;
+    font-size: 50;
+    -webkit-text-stroke: 1px black;
+    -webkit-text-fill-color: white;
+}
+.hd{
+    display:inline-block;
+    text-align: top;
+    color:white;
+    font:italic;
+}
+.txt{
+    background-color: #FFC6C6;
+    display:inline-block;
+    width:600px;
+    position: relative bottom right;
+}
