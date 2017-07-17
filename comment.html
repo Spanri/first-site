@@ -2,11 +2,11 @@
 <html>
 
 <head>
-    <title>Код вопроса</title>
+    <title>Котики</title>
     <link rel="stylesheet" href="./CssCode/style.css">
     <link rel="stylesheet" href="./CssCode/ForAll.css">
     <link rel="shortcut icon" href="./Icons/99999.ico" type="image/x-icon">
-    <script src="./JsCode/index.js" ></script>
+    <script src="./JsCode/index.js"></script>
 </head>
 
 <body>
@@ -19,8 +19,8 @@
                     <button class="but" onclick="changeCol('notBlue')">Обычный кiт</button>
                 </div>
             </div>
-            <h3 class="slogan" title="Это риторический вопрос"><i>Почешешь котику за ушком?</i></h3>
-            <p id="date" class="date" style="margin-left:22%;"></p>
+            <h3 class="slogan" style="font-size:32px;" title="Он не укусит"><i>Погладь его...</i></h3>
+            <p id="date" style="margin-left:34%" class="date"></p>
             <nav style="margin-left:57%;">
                 <input class="but"   type="button" onClick='location.href="index.html"' value="Главная"></input>
                 <input class="but" type="button" onClick='location.href="second.html"' value="Код js"></input>
@@ -29,23 +29,18 @@
                 <input class="but"  type="button" onClick='location.href="news.html"'value="Новости"></input>
             </nav>
         </header>
-    <div style="background-color: #FFC6C6;width:600px;padding:1%;margin:auto;font-size:25px;">
-        <p id="code"></p>
-        <script type="text/javascript">
-            // var br = '<br>';
-             var an = answ.toString();
-            // var a1 = an.substring(0, '{');
-            // var a2 = an.substring('{', an.length);
-            // an = a1 + br + a2;
-            // for (i = 0; i < 3; i++) {
-            //     var a1 = an.substring(0, ';');
-            //     var a2 = an.substring(';', an.length);
-            //     an = a1 + br + a2;
-            // }
-            document.getElementById("code").innerHTML = an;
-        </script>
-    </div>
-    <button class="but" style="margin:1%;font-size:20px;" onClick='location.href="index.html"'>Назад</button>
+    <section style="margin:1%;">
+        <form action="com()" method="post" name="commentform" id="commentform">
+            <div>
+                <p style="color:white;display:inline-block">Кошачий никнейм</p>
+                <p><input type="text" style="margin:1;display:inline-block" name="author" id="author" value="" size="25" /></p>
+            </div>
+            <p><textarea name="comment" style="margin-top:1%;margin-bottom:1%" id="comment" cols="48" rows="8">Напиши котикам!</textarea>
+            </p>
+            <p><input name="submit" class="but" style="margin:0" type="submit" id="submit" value="Отправить" />
+            </p>
+        </form>
+    </section>
     <footer>
         <p>Autor: Spanri, <a href="https://vk.com/art_nysha">vkontakte</a>, Telegram/WhatsApp: 8-925-342-90-60</a>
         </p>

@@ -18,8 +18,18 @@ function changeCol(color) {
     else cat.style.color = "white";
 }
 
-function answ(ans) {
+function answ() {
+    var ans = document.getElementById()
     if (ans == 1) result = "Ну... Если лев котик, то да";
     else if (ans == 2) result = "Ты дурак чтоль? Где ты там столько увидел?";
     else result = "Что-то ты не шаришь в видах животных...";
+}
+
+function com(){
+    return;
+}
+
+function rekl(){
+    document.getElementById("rekl").style.display = 'block';
+    document.getElementById("butRekl").style.display = 'none';
 }

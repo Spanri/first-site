@@ -11,11 +11,11 @@ html,
   height: 100%;
 }
 header{
-    background-color: #FF9999;
+    background-color: #FFC6C6;
     height: 200px;
     max-width: 100%;
     border-radius: 15px 15px 0 0;
-    margin-top:1%;
+    margin:1%;
 }
 .maindesc{
     display:inline-block;
@@ -25,9 +25,8 @@ header{
     font:italic;
 }
 .slogan{
-    font-size:25px;
+    font-size:28px;
     -webkit-text-stroke:0.5px;
-    background-image:url("./Images/fon2.jpg");
     display:inline-block;
     color: white;
     font:italic;
@@ -38,22 +37,26 @@ header{
     margin:1%;
     border:5px wheat double;
 }
-.changeCol{
+.but{
+    box-shadow: -3px 5px  #27496d;
+    border: 0;
     display:inline-block;
-    margin:1%;
+    margin:0.9%;
+    padding: 1.3%;
     font-size:20px;
-    -webkit-text-fill-color: white;
-    background-color: #B75E62;
-    border-radius: 13%;
+    background-color: white;
+    
 }
 .date{
-    margin-left:15%;
+    margin-left:28%;
     display:inline-block;
     color:white;
     font-size:50px;
 }
 body{
-    background-image: url('./Images/fon.jpg');
+    background: #5DCEC6;
+    /*background: linear-gradient(45deg, #EECFBA, #C5DDE8);
+    background-image: url('./Images/fon.jpg');*/
     width:1500px;
     margin:auto;
     height: 100%;
@@ -65,9 +68,9 @@ body{
 }
 
 footer{
-    background-color: #FF9999;
+    background-color: #FFC6C6;
    height: 80px;
-    margin-top: -80px;
     text-align: center;
-    color:white;
+    
+    color:#2D338E;;
 }

@@ -11,20 +11,26 @@
 
 <body>
     <header>
-        <img src="./Images/cat.jpg" class="catHead" title="Котик">
-        <div style="display:inline-block;">
-            <h2 id="cat" class="maindesc">Кооооотики!</h2>
-            <div>
-                <button class="changeCol" onclick="changeCol('blue')">Синий кiт</button>
-                <button class="changeCol" onclick="changeCol('notBlue')">Обычный кiт</button>
+            <img src="./Images/cat.jpg" class="catHead" title="Котик">
+            <div style="display:inline-block;">
+                <h2 id="cat" class="maindesc">Кооооотики!</h2>
+                <div>
+                    <button class="but" onclick="changeCol('blue')">Синий кiт</button>
+                    <button class="but" onclick="changeCol('notBlue')">Обычный кiт</button>
+                </div>
             </div>
-        </div>
-        <h3 class="slogan" title="Это риторический вопрос"><i>Нравится урчание под ухом?</i></h3>
-        <p id="date" class="date"></p>
-    </header>
+            <h3 class="slogan" title="Это риторический вопрос"><i>Помурчим в тишине?</i></h3>
+            <p id="date" class="date"></p>
+            <nav style="margin-left:57%;">
+                <input class="but"  type="button" onClick='location.href="index.html"' value="Главная"></input>
+                <input class="but"  type="button" onClick='location.href="second.html"' value="Код js"></input>
+                <input class="but"  type="button" onClick='location.href="comment.html"' value="Письма автору"></input>
+                <input class="but"  type="button" onClick='location.href="zakaz.html"'value="Заказ арта"></input>
+                <input class="but"  type="button" onClick='location.href="news.html"'value="Новости"></input>
+            </nav>
+        </header>
     <section class="content" style="position:relative;">
         <section class="catq">
-            <div style="background-color: #FFC6C6;width:500px;margin-top:1%">
                 <img title="Пес, лев и крольчиха" style="margin:1%" width="98%" alt="fgh" src="./Images/9988.jpg">
                 <div>
                     <p class="dec" style="display:inline-block;width:100px;">Сколько тут котеек?</p>
@@ -34,7 +40,6 @@
                         <output style="width:120px;" name="result"></output>
                     </form>
                 </div>
-            </div>
             <input style="margin:1%;outline:none" type="image" src="./Images/Котик2.jpg" width="100px" title="Секретная кнопка. Посмотреть код вопроса"
                 onClick='location.href="second.html"'>
         </section>
@@ -42,7 +47,7 @@
             <h3 class="dec">Знаешь, кто такие котики?</h3>
             <article style="margin:2%">
                 <p>Котаны обитают в домах и на улице, они заполоняют множество щелей и емкостей! Так почему же они так популярны?</p>
-                <img src="./Images/одж.jpg" title="Необычный кот(рисунок)" width="150px" style="float:left;margin-right:2%">
+                <img src="./Images/одж.jpg" title="Необычный кот(рисунок)" width="150px" style="float:left;margin-right:2%;margin-top:2%;margin-bottom:2%">
                 <p>Ко́шка, или дома́шняя ко́шка (лат. Félis silvéstris cátus), — домашнее животное, одно из наиболее популярных[1]
                     (наряду с собакой) «животных-компаньонов». С зоологической точки зрения домашняя кошка — млекопитающее
                     семейства кошачьих отряда хищных. Ранее домашнюю кошку нередко рассматривали как отдельный биологический
@@ -69,7 +74,8 @@
                     <li>Об авторе</li>
                 </ol>
             </div>
-            <div class="reklama">
+            <input id="butRekl" class="but" value="Нажми меня, тут котик, честно" onclick="rekl()" type="button">
+            <div id="rekl" class="reklama" style="display:none;">
                 <div style="margin:2%;text-align:center;width:380px;">
                     <h2 class="dec">Самый лучший паблик c артами:</h2>
                     <a href="https://vk.com/art_nysha">

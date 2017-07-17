@@ -21,35 +21,34 @@
             <div style="display:inline-block;">
                 <h2 id="cat" class="maindesc">Кооооотики!</h2>
                 <div>
-                    <button class="changeCol" onclick="changeCol('blue')">Синий кiт</button>
-                    <button class="changeCol" onclick="changeCol('notBlue')">Обычный кiт</button>
+                    <button class="but" onclick="changeCol('blue')">Синий кiт</button>
+                    <button class="but" onclick="changeCol('notBlue')">Обычный кiт</button>
                 </div>
             </div>
-            <h3 class="slogan" title="Это риторический вопрос"><i>Помурчим в тишине?</i></h3>
-            <p id="date" class="date"></p>
+            <h3 class="slogan" style="font-size:32px;" title="Он не укусит"><i>Погладь его...</i></h3>
+            <p id="date" style="margin-left:34%" class="date"></p>
+            <nav style="margin-left:57%;">
+                <input class="but"   type="button" onClick='location.href="index.html"' value="Главная"></input>
+                <input class="but" type="button" onClick='location.href="second.html"' value="Код js"></input>
+                <input class="but"   type="button" onClick='location.href="comment.html"' value="Письма автору"></input>
+                <input class="but"   type="button" onClick='location.href="zakaz.html"'value="Заказ арта"></input>
+                <input class="but"  type="button" onClick='location.href="news.html"'value="Новости"></input>
+            </nav>
         </header>
         <section class="content">
-            <p>Я делаю это потому, что мне нравится! Поэтому хочу поделиться с вами информацией о том, что мне нравится. Извините,
-                что большая часть о рисовании, я же все таки художник:)</p>
-            <nav><a href="index.html">Главная</a> | <a href="second.html">Код js</a> </nav>
-            <section>
+            <section class="mini"><p>Я делаю это потому, что мне нравится! Поэтому хочу поделиться с вами информацией о том, что мне нравится.
+                    Извините, что большая часть о рисовании, я же все таки художник:)</p>
+            </section>
+            <section class="mini">
                 <article><a href="./Article/draw.html">Какие ресурсы с котичами я использую</a></article>
-            </section>
-            <section>
                 <article><a href="./Article/alternative.html">Альтернатива котам??!</a></article>
-            </section>
-            <section>
                 <article><a href="./Article/nenavist.html">О любви и ненависти к котяндрам</a></article>
-            </section>
-            <section>
                 <article><a href="./Article/nenavist.html">О стилях в рисовании кошачьих</a></article>
-            </section>
-            <section>
                 <article><a href="./Article/theory.html">Немного теории о котиках</a></article>
             </section>
         </section>
-        <aside class="content">
-            <article>Пожелания автору</article>
+        <aside class="content" style="margin-right:1%">
+            <article><a href="comment.html">Пожелания автору</a></article>
             <article>Последний рисунок</article>
             <article>Как заказать арт?</article>
             <article>
