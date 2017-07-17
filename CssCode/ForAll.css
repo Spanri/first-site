@@ -1,0 +1,73 @@
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+}   
+
+html,
+.wrapper {
+  height: 100%;
+}
+header{
+    background-color: #FF9999;
+    height: 200px;
+    max-width: 100%;
+    border-radius: 15px 15px 0 0;
+    margin-top:1%;
+}
+.maindesc{
+    display:inline-block;
+    font-size:70px;
+    -webkit-text-stroke: 2px white;
+    color: white;
+    font:italic;
+}
+.slogan{
+    font-size:25px;
+    -webkit-text-stroke:0.5px;
+    background-image:url("./Images/fon2.jpg");
+    display:inline-block;
+    color: white;
+    font:italic;
+}
+.catHead{
+    height:80%;
+    float:left;
+    margin:1%;
+    border:5px wheat double;
+}
+.changeCol{
+    display:inline-block;
+    margin:1%;
+    font-size:20px;
+    -webkit-text-fill-color: white;
+    background-color: #B75E62;
+    border-radius: 13%;
+}
+.date{
+    margin-left:15%;
+    display:inline-block;
+    color:white;
+    font-size:50px;
+}
+body{
+    background-image: url('./Images/fon.jpg');
+    width:1500px;
+    margin:auto;
+    height: 100%;
+}
+.content {
+  box-sizing: border-box;
+  min-height: 100%;
+  padding-bottom: 90px;
+}
+
+footer{
+    background-color: #FF9999;
+   height: 80px;
+    margin-top: -80px;
+    text-align: center;
+    color:white;
+}
