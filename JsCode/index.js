@@ -12,9 +12,16 @@ setInterval(function () {
     document.getElementById("date").innerHTML = time;
 }, 1000);
 
+$('a').click(function () {
+    $('html, body').animate({
+        scrollTop: $($(this).attr('href')).offset().top
+    }, 1500);
+    return false;
+});
+
 function changeCol(color) {
     var cat = document.getElementById("cat");
-    if (color == 'blue') cat.style.color = '#6C81E6';
+    if (color == 'blue') cat.style.color = '#80C3CE';
     else cat.style.color = "white";
 }
 
