@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Код js</title>
+    <link rel="stylesheet" href="../CssCode/style.css">
+    <link rel="stylesheet" href="../CssCode/ForAll.css">
+    <link rel="shortcut icon" href="../Icons/cat2.ico" type="image/x-icon">
+    <script src="../JsCode/index.js"></script>
+</head>
+
+<body>
+    <!--Шапка-->
+    <header id="nachalo">
+        <div style="display:inline-block;">
+            <h2 id="cat" class="maindesc">Catanri</h2>
+            <div>
+                <button class="but" style="margin-left:3%;display:inline-block;width:150px;" onclick="changeCol('blue')">Синий кiт</button>
+                <button class="but" style="display:inline-block;width:150px;" onclick="changeCol('notBlue')">Обычный кiт</button>
+            </div>
+        </div>
+        <div style="display:inline-block;position:absolute;right:1%;top:12%;">
+            <h3 class="slogan" title="но не бешеных"><i>Время гладить котят!</i></h3>
+            <p id="date" class="date"></p>
+        </div>
+    </header>
+    <!--Сюда надо импортировать шапку и навигацию-->
+    <div style="background: rgba(111, 169, 170, 0.7);margin:auto;margin-top:1%;max-width:60%;font-size:25px;">
+        <p id="code" style="color:white;padding:1%;"></p>
+        <input class="but" style="white-space:pre-line;width:98%" type="button" onClick="show('answ');" value="Код про выбор котиков с главной страницы">
+        <input class="but" style="white-space:pre-line;width:98%;" type="button" onClick="show('changeColor');" value="Код, меняющий цвет названия сайта">
+        <input class="but" style="white-space:pre-line;width:98%;" type="button" onClick="show('show');" value="Код(этот), который показывает функции">
+    </div>
+    <button class="but" style="margin:1%;font-size:20px;" onClick='location.href="../index.html"'>Назад</button>
+    <!--Подвал сайта-->
+    <footer>
+        <p>&copy; Spanri, 2017 <br> Контакты: <a href="https://vk.com/art_nysha">vkontakte</a>, Telegram/WhatsApp: +7 925 342
+            90 60
+            </a>
+        </p>
+    </footer>
+</body>
+
+</html>

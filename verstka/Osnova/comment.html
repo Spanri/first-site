@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Тут всякие крутые штуки для IE и не только-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- А тут остальное -->
+    <title>Пожелания автору | Catanri</title>
+    <link rel="stylesheet" href="../CssCode/style.css">
+    <link rel="stylesheet" href="../CssCode/ForAll.css">
+    <link rel="shortcut icon" href="../Icons/cat2.ico" type="image/x-icon">
+    <script type="text/javascript" src="..\node_modules\jquery\dist\jquery.js"></script>
+    <script src="../JsCode/index.js"></script>
+</head>
+
+<body>
+    <div id="nav0"> </div>
+     <!--Шапка-->
+    <header id="nachalo">
+        <div style="display:inline-block;">
+            <h2 id="cat" class="maindesc">Catanri</h2>
+            <div>
+                <button class="but" style="margin-left:3%;display:inline-block;width:150px;" onclick="changeCol('blue')">Синий кiт</button>
+                <button class="but" style="display:inline-block;width:150px;" onclick="changeCol('notBlue')">Обычный кiт</button>
+            </div>
+        </div>
+        <div style="display:inline-block;position:absolute;right:1%;top:12%;">
+            <h3 class="slogan" title="но не бешеных"><i>Время гладить котят!</i></h3>
+            <p id="date" class="date"></p>
+        </div>
+    </header>
+    <!--Сюда надо импортировать шапку и навигацию-->
+    <section style="margin:1%;">
+        <form action="" onsubmit="com();">
+            <div>
+                <p style="color:white;">Кошачий никнейм:</p>
+                <p><input type="text" class="but" id="author" value="" size="25" /></p>
+            </div>
+            <p><textarea style="margin-top:1%;margin-bottom:1%" class="but" id="comment" cols="48" rows="8">Напиши котикам!</textarea>
+            </p>
+            <p><input type="submit" style="margin:0" class="but" value="Отправить" />
+            </p>
+        </form>
+        <p id="comm"></p>
+    </section>
+    <footer>
+        <p>Autor: Spanri, <a href="https://vk.com/art_nysha">vkontakte</a>, Telegram/WhatsApp: 8-925-342-90-60</a>
+        </p>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Тут всякие крутые штуки для IE и не только-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- А тут остальное -->
+    <title>Catanri</title>
+    <link rel="stylesheet" href="./CssCode/style.css">
+    <link rel="stylesheet" href="./CssCode/ForAll.css">
+    <link rel="shortcut icon" href="./Icons/cat2.ico" type="image/x-icon">
+    <script type="text/javascript" src="..\node_modules\jquery\dist\jquery.js"></script>
+    <script src="./JsCode/index.js"></script>
+    <link rel="import" href="headr.html">
+</head>
+
+<body>
+    <!--Навигация-->
+    <nav style="z-index:100;">
+        <input class="but0" type="button" style="float:left;" onClick='location.href="./Osnova/index.html"' value="Главная"></input>
+        <input class="but0" type="button" onClick='location.href="./Osnova/why.html"' value="Статьи"></input><input class="but0"
+            type="button" onClick='location.href="./Osnova/second.html"' value="Код js"></input><input class="but0" type="button"
+            onClick='location.href="./Osnova/comment.html"' value="Письма автору"></input><input class="but0" style="color:gray;"
+            type="button" value="Заказ арта"></input><input class="but0" type="button" style="color:gray;" value="Новости"></input>
+        <input class="but0" type="button" style="float:right;" onClick='location.href="https://vk.com/art_nysha"' value="Рисунки автора"></input>
+    </nav>
+    <!--Шапка-->
+    <header id="nachalo">
+        <div style="display:inline-block;">
+            <div style="width:100%;">
+                <button class="but" style="padding:0;margin-left:5%;margin-top:5%;display:inline-block;width:45%;background-color: rgba(0, 0, 0, 0);" onclick="changeCol('blue')">Синий</button></option>
+                <button class="but" style="padding:0;display:inline-block;width:45%;background-color: rgba(0, 0, 0, 0);" onclick="changeCol('notBlue')">Белый</button></option>
+            </div>
+            <h2 id="cat" class="maindesc">Spanri</h2>
+        </div>
+        <div style="display:inline-block;position:absolute;right:1%;top:12%;">
+            <h3 class="slogan" title="но не бешеных"><i>Время гладить котят!</i></h3>
+            <p id="date" class="date"></p>
+        </div>
+    </header>
+    <!--Основная секция-->
+    <section class="maxsec">
+        <!--Блок справа-->
+        <section style="float:left;width:30%;margin:1%;margin-top:0;">
+            <!--Сколько тут котеек+картинка+кнопка-->
+            <section class="catq">
+                <img alt="Пес, лев и крольчиха" style="margin:5%;" width="90%" alt="fgh" src="./Images/9988.jpg">
+                <div style="display:inline-block;width:30%;margin:5%;margin-top:0;">
+                    <p class="dec">Сколько тут котеек?</p>
+                    <input style="outline:none;" type="image" src="./Images/Котик2.jpg" alt="Кот" width="95%" title="Секретная кнопка. Посмотреть код вопроса"
+                        onClick='location.href="./Osnova/second.html"'>
+                </div>
+                <div style="display:inline-block;width:50%;position:relative;top:50%">
+                    <form action="" onsubmit="answ();">
+                        <input id="answ" style="width:30%;" type="number" name="cm">
+                        <input type="submit" value="Проверить">
+                    </form>
+                </div>
+            </section>
+            <!--Реклама-->
+            <input id="butRekl" class="butrekl" value="Нажми меня, тут котик, честно" onclick="rekl()" type="button">
+            <div id="rekl" class="reklama" style="display:none;">
+                <h2 class="dec" style="text-align:center;padding-top:2%">Самый лучший паблик c артами:</h2>
+                <a href="https://vk.com/art_nysha">
+                    <h2 style="text-align:center;">Кликни сюда и подпишись<br> во славу котикам!</h2>
+                </a>
+                <h3 style="text-align:center;color:#27496d;padding-bottom:2%">Это реклама, смирись</h3>
+            </div>
+            <!--Навигация по странице-->
+            <input id="headr" type="button" class="but" value="В начало" onClick='location.href="#nachalo"'>
+        </section>
+        <!--Блок слева-->
+        <section style="margin:1%;">
+            <!--Текст про котиков-->
+            <section class="txt">
+                <h3 class="dec" style="text-align:center;">Знаешь, кто я?</h3>
+                <article style="margin:2%;color:whitesmoke;font-size:120%;">
+                    <p>Spanri, люблю рисовать и есть мандарины, привет.</p>
+                    <img src="./Images/одж.jpg" alt="Необычный кот(рисунок)" title="Необычный, да?" class="txtimg">
+                    <p>В 2011 году я нашла <a href="https://multator.ru">этот сайт</a> и задержалась на нем аж 2 года! Я постоянно
+                        рисовала на нем, точнее анимировала и уже спустя месяц думала, что я крутой профессиональный художник.
+                        К слову, я ни разу тогда не работала в графическом редакторе лучше paint, да и анимации у меня были
+                        мягко говоря не очень... А еще у меня был планшет genius. Не берите genius.
+                    </p>
+                    <p>И вот, однажды, на multator пришла крутая художница, нарисовала анимацию и оставила ссылку на свою группу
+                        вк. Это была Коул. После этого мне стало интересно, действительно ли вк есть еще художники со своими
+                        группами. И их оказалось море! Я скачала paint tool sai и принялась творить. И до сих пор творю.
+                    </p>
+                    <p>
+                        Последнее время мне нравится осваивать новые программы. Я немного освоилась в adobe illustrator и adobe photoshop. Еще собираюсь
+                        скачать scetch, не знаю зачем...
+                    </p>
+                    <p>
+                        Творец, помни: если тебе кажется, что у тебя ничего так вышло, это в 98% случаев не так!!!! Хотя у меня есть пара работ,
+                        которые мне нравятся до сих пор. В основном, это те работы, которые я рисовала очень долго. Или вдохновение
+                        было. Оно оооочень важно! У меня это музыка и чужие арты. Когда я просматриваю группы артеров, у
+                        меня начинают чесаться руки и я хочу творить! Нормально ли это? Надеюсь, да...
+                    </p>
+                </article>
+            </section>
+        </section>
+    </section>
+    <!--Подвал сайта-->
+    <footer>
+        <p>&copy; 2017 Spanri <br> Контакты: <a href="https://vk.com/art_nysha">vkontakte</a>, Telegram/WhatsApp: +7 925 342
+            90 60
+            </a>
+        </p>
+    </footer>
+</body>
+
+</html>

@@ -4,11 +4,15 @@
     font-family: fantasy;
     font-size: 120%;
 }
-.txt,.reklama,.menu{
+.txt,.reklama{
     display:inline-block;
 }
-.txt,.reklama,.menu,.catq{
-    background-color: rgba(255, 198, 198, 1);
+.txt,.reklama,.catq{
+    /*background-color: rgba(255, 198, 198, 1);*/
+    background: rgba(111, 169, 170, 0.7)
+}
+.txt,#headr{
+    margin-bottom: 80px;
 }
 .catq{
     min-height:300px;
