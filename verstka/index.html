@@ -17,24 +17,28 @@
 </head>
 
 <body>
+    <main>
     <!--Навигация-->
-    <nav style="z-index:100;">
-        <input class="but0" type="button" style="float:left;" onClick='location.href="./Osnova/index.html"' value="Главная"></input>
-        <input class="but0" type="button" onClick='location.href="./Osnova/why.html"' value="Статьи"></input><input class="but0"
-            type="button" onClick='location.href="./Osnova/second.html"' value="Код js"></input><input class="but0" type="button"
-            onClick='location.href="./Osnova/comment.html"' value="Письма автору"></input><input class="but0" style="color:gray;"
-            type="button" value="Заказ арта"></input><input class="but0" type="button" style="color:gray;" value="Новости"></input>
-        <input class="but0" type="button" style="float:right;" onClick='location.href="https://vk.com/art_nysha"' value="Рисунки автора"></input>
+    <nav style="z-index:100;background:rgba(255, 198, 198, 1);text-align:center;">
+        <a class="but0"  href="index.html">Главная</a><a
+        class="but0" href="./Osnova/why.html">Заметки</a><a class="but0"
+       href="./Osnova/second.html">Код js</a><a class="but0"
+        href="./Osnova/comment.html">Комменты</a><a class="but0"  href="./404.html"
+        >Заказ арта</a><a class="but0" href="./404.html">Новости</a><a
+        class="but0" href="./Osnova/my_art.html">Где я есть</a>
     </nav>
+    <p class="vert" style="top:20%;left:0;position:fixed;z-index:1;color:white;background:rgba(111, 169, 120, 0.7);;writing-mode:vertical-lr;font-size:1.5em;margin:0;">Этот сайт пока не очень, соооори</p>
     <!--Шапка-->
-    <header id="nachalo">
-        <div style="display:inline-block;">
+    <header id="nachalo" style="position:relative;">
+        <div style="display:inline-block;margin-left:1%;">
             <div style="width:100%;">
-                <button class="but" style="padding:0;margin-left:5%;margin-top:5%;display:inline-block;width:45%;background-color: rgba(0, 0, 0, 0);" onclick="changeCol('blue')">Синий</button></option>
+                <button class="but" style="padding:0;display:inline-block;width:45%;background-color: rgba(0, 0, 0, 0);"
+                    onclick="changeCol('blue')">Синий</button></option>
                 <button class="but" style="padding:0;display:inline-block;width:45%;background-color: rgba(0, 0, 0, 0);" onclick="changeCol('notBlue')">Белый</button></option>
             </div>
             <h2 id="cat" class="maindesc">Spanri</h2>
         </div>
+        <img src="./Images/forest.png" style="margin-left:3%;padding-top:1%;">
         <div style="display:inline-block;position:absolute;right:1%;top:12%;">
             <h3 class="slogan" title="но не бешеных"><i>Время гладить котят!</i></h3>
             <p id="date" class="date"></p>
@@ -46,15 +50,12 @@
         <section style="float:left;width:30%;margin:1%;margin-top:0;">
             <!--Сколько тут котеек+картинка+кнопка-->
             <section class="catq">
-                <img alt="Пес, лев и крольчиха" style="margin:5%;" width="90%" alt="fgh" src="./Images/9988.jpg">
-                <div style="display:inline-block;width:30%;margin:5%;margin-top:0;">
-                    <p class="dec">Сколько тут котеек?</p>
-                    <input style="outline:none;" type="image" src="./Images/Котик2.jpg" alt="Кот" width="95%" title="Секретная кнопка. Посмотреть код вопроса"
-                        onClick='location.href="./Osnova/second.html"'>
-                </div>
-                <div style="display:inline-block;width:50%;position:relative;top:50%">
+                <img alt="Пес, лев и крольчиха" style="margin:5%;margin-bottom:1%;" width="90%" src="./Images/9988.jpg">
+                <p class="dec" style="display:inline-block;width:30%;margin:5%;margin-top:0;margin-bottom:3%;">Сколько тут котеек?</p>
+                <div style="display:inline-block;width:50%;padding-top:10%;">
                     <form action="" onsubmit="answ();">
                         <input id="answ" style="width:30%;" type="number" name="cm">
+                        <br>
                         <input type="submit" value="Проверить">
                     </form>
                 </div>
@@ -64,12 +65,12 @@
             <div id="rekl" class="reklama" style="display:none;">
                 <h2 class="dec" style="text-align:center;padding-top:2%">Самый лучший паблик c артами:</h2>
                 <a href="https://vk.com/art_nysha">
-                    <h2 style="text-align:center;">Кликни сюда и подпишись<br> во славу котикам!</h2>
+                    <h2 style="text-align:center;color:white;">Кликни сюда и подпишись<br> во славу котикам!</h2>
                 </a>
                 <h3 style="text-align:center;color:#27496d;padding-bottom:2%">Это реклама, смирись</h3>
             </div>
             <!--Навигация по странице-->
-            <input id="headr" type="button" class="but" value="В начало" onClick='location.href="#nachalo"'>
+            <input id="nachalo_but" type="button" style="margin-left:0;" class="but" value="В начало" onClick='location.href="#nachalo"'>
         </section>
         <!--Блок слева-->
         <section style="margin:1%;">
@@ -80,7 +81,7 @@
                     <p>Spanri, люблю рисовать и есть мандарины, привет.</p>
                     <img src="./Images/одж.jpg" alt="Необычный кот(рисунок)" title="Необычный, да?" class="txtimg">
                     <p>В 2011 году я нашла <a href="https://multator.ru">этот сайт</a> и задержалась на нем аж 2 года! Я постоянно
-                        рисовала на нем, точнее анимировала и уже спустя месяц думала, что я крутой профессиональный художник.
+                        рисовала там, точнее анимировала и уже спустя месяц думала, что я крутой профессиональный художник.
                         К слову, я ни разу тогда не работала в графическом редакторе лучше paint, да и анимации у меня были
                         мягко говоря не очень... А еще у меня был планшет genius. Не берите genius.
                     </p>
@@ -90,7 +91,7 @@
                     </p>
                     <p>
                         Последнее время мне нравится осваивать новые программы. Я немного освоилась в adobe illustrator и adobe photoshop. Еще собираюсь
-                        скачать scetch, не знаю зачем...
+                        скачать sketch и уже скачала corel painter...
                     </p>
                     <p>
                         Творец, помни: если тебе кажется, что у тебя ничего так вышло, это в 98% случаев не так!!!! Хотя у меня есть пара работ,
@@ -101,10 +102,12 @@
                 </article>
             </section>
         </section>
+        <div style="height: 120px;clear: both;"></div>
     </section>
+    </main>
     <!--Подвал сайта-->
     <footer>
-        <p>&copy; 2017 Spanri <br> Контакты: <a href="https://vk.com/art_nysha">vkontakte</a>, Telegram/WhatsApp: +7 925 342
+        <p>&copy; 2017 Spanri <br> Контакты: <a href="https://vk.com/animeshny_kot">vkontakte</a>, Telegram/WhatsApp: +7 925 342
             90 60
             </a>
         </p>

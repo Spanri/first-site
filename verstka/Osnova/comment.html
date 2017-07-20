@@ -16,37 +16,51 @@
 </head>
 
 <body>
-    <div id="nav0"> </div>
-     <!--Шапка-->
-    <header id="nachalo">
-        <div style="display:inline-block;">
-            <h2 id="cat" class="maindesc">Catanri</h2>
-            <div>
-                <button class="but" style="margin-left:3%;display:inline-block;width:150px;" onclick="changeCol('blue')">Синий кiт</button>
-                <button class="but" style="display:inline-block;width:150px;" onclick="changeCol('notBlue')">Обычный кiт</button>
+    <section style="min-height:100%">
+    <!--Навигация-->
+    <nav style="z-index:100;background:rgba(255, 198, 198, 1);text-align:center;">
+        <a class="but0"  href="../index.html">Главная</a><a
+        class="but0" href="why.html">Заметки</a><a class="but0"
+       href="second.html">Код js</a><a class="but0"
+        href="comment.html">Письма мне</a><a class="but0"  href="../404.html"
+        >Заказ арта</a><a class="but0" href="../404.html">Новости</a><a
+        class="but0" href="my_art.html">Где я есть</a>
+    </nav>
+    <!--Шапка-->
+    <header id="nachalo" style="margin-bottom:1%;">
+        <div style="display:inline-block;margin-left:1%;">
+            <div style="width:100%;">
+                <button class="but" style="padding:0;display:inline-block;width:45%;background-color: rgba(0, 0, 0, 0);"
+                    onclick="changeCol('blue')">Синий</button></option>
+                <button class="but" style="padding:0;display:inline-block;width:45%;background-color: rgba(0, 0, 0, 0);" onclick="changeCol('notBlue')">Белый</button></option>
             </div>
+            <h2 id="cat" class="maindesc">Spanri</h2>
         </div>
+        <img src="../Images/forest.png" style="margin-left:3%;padding-top:1%;">
         <div style="display:inline-block;position:absolute;right:1%;top:12%;">
             <h3 class="slogan" title="но не бешеных"><i>Время гладить котят!</i></h3>
             <p id="date" class="date"></p>
         </div>
     </header>
-    <!--Сюда надо импортировать шапку и навигацию-->
-    <section style="margin:1%;">
+    <section style="margin:1%;min-height: 100%;">
         <form action="" onsubmit="com();">
             <div>
-                <p style="color:white;">Кошачий никнейм:</p>
+                <p style="color:white;margin-left:1%;">Кошачий никнейм:</p>
                 <p><input type="text" class="but" id="author" value="" size="25" /></p>
             </div>
-            <p><textarea style="margin-top:1%;margin-bottom:1%" class="but" id="comment" cols="48" rows="8">Напиши котикам!</textarea>
+            <p><textarea style="margin-top:1%;margin-bottom:1%" class="but" id="comment" cols="48" rows="8">Оно не работает, если что</textarea>
             </p>
-            <p><input type="submit" style="margin:0" class="but" value="Отправить" />
+            <p><input type="submit" style="margin:0;margin-left:1%;" class="but" value="Отправить" />
             </p>
         </form>
         <p id="comm"></p>
     </section>
+    <div style="height: 120px;"></div>
+    </section>
     <footer>
-        <p>Autor: Spanri, <a href="https://vk.com/art_nysha">vkontakte</a>, Telegram/WhatsApp: 8-925-342-90-60</a>
+        <p>&copy; 2017 Spanri <br> Контакты: <a href="https://vk.com/animeshny_kot">vkontakte</a>, Telegram/WhatsApp: +7 925 342
+            90 60
+            </a>
         </p>
     </footer>
 </body>

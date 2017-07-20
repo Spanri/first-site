@@ -1,4 +1,7 @@
 
+a{
+    text-decoration: none;
+}
 html{
   height: 100%;
 }
@@ -19,13 +22,11 @@ nav{
 }
 .but0{
     background-color: rgba(255, 198, 198, 1);
-    padding-left: 2%;
-    padding-right: 2%;
     color: white;
     font-size: 140%;
     overflow: hidden;
     text-overflow: ellipsis;
-    width: 14.285714%;
+    width: 14%;
     border: 0;
     padding: 0.1%;
 }
@@ -61,9 +62,9 @@ header{
 }
 /*Основная часть*/
 .maxsec{
-    /*background: white;*/
     max-width:1200px;
     min-width:500px;
+    min-height: 100%;
     margin:auto;
     position: relative;
 }
@@ -82,10 +83,10 @@ header{
 }
 
 footer{
+    margin-top:-70px;
     background-color: rgba(111, 169, 120, 0.7);
     width: 100%;
-    position: fixed;
-    bottom: 0;
+    padding:0.5px;
     text-align: center;
     color:white;
 }
