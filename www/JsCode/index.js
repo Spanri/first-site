@@ -43,18 +43,23 @@ $(document).ready(function () {
       });
       return false;
    });
-
-    $("answer").submit(function (event) {
-        event.preventDefault();
-        alert("Заходим в функцию");
-        ans = document.getElementById('answ');
-        alert(ans);
-        if (ans == 1) result = "Ну... Если лев котик, то да";
-        else if (ans == 2) result = "Ты дурак чтоль? Где ты там столько увидел?";
-        else result = "Что-то ты не шаришь в видах животных...";
-        alert(result);
-    });
 });
+
+function answ() {
+    ans = getElementById('answ');
+    alert(ans);
+    if (ans == 1) result = "Ну... Если лев котик, то да";
+    else if (ans == 2) result = "Ты дурак чтоль? Где ты там столько увидел?";
+    else result = "Что-то ты не шаришь в видах животных...";
+    alert(result);
+}
+
+//Показать блок с рекламой
+    function rekl() {
+        //console.log(5);
+        $("#reklama").css("display","block");
+        $("#reklama_but").css("display","none");
+    }
 
 //Время
 setInterval(function () {
@@ -79,20 +84,20 @@ function changeCol(color) {
     else cat.style.color = "white";
 }
 
+// function changeCol(color) {
+//     var cat = document.getElementById("cat");
+//     if (color == 'blue') {
+//         document.getElementById("but1").innerHTML = 'Белый';
+//         cat.style.color = '#80C3CE';
+//     }
+//     else cat.style.color = "white";
+// }
+
 //Комментарии
 function com() {
     //alert('Дальше есть еще один алерт с выводом коммента, но он не делается почему-то((((( хотя этот алерт делается в этой же функции...');
     var comment = getElementById("author").value;
     alert('haha' + comment);
-}
-
-//Показать блок с рекламой
-function rekl() {
-    //разблокировываем блок с рекламой
-    document.getElementById("reklama").style.display = 'block';
-    //убираем кнопку
-    document.getElementById("reklama_but").style.display = 'none';
-    //document.getElementById("reklama_but").href = "#nachalo_but";
 }
 
 //Для страницы /Код js/
@@ -102,6 +107,7 @@ function show(par) {
     if (par == "answ") an = answ.toString();
     if (par == "changeColor") an = changeCol.toString();
     if (par == "show") an = show.toString();
+    if (par == "com") an = com.toString();
     //разбиваем на строки;
     an = an.split(/\r?\n+/);
     //делаем перенос;
@@ -109,5 +115,6 @@ function show(par) {
     //объединяем в строку;
     for (i = 0; i < an.length; i++) an3 += an[i];
     //выводим
+    //$("#code").innerHTML = an3;
     document.getElementById("code").innerHTML = an3;
 }

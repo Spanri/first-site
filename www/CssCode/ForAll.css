@@ -14,15 +14,13 @@ a{
     text-decoration: none;
     color: white;
 }
-main{
-    min-height:100%;
-}
 html, body{
 height: 100%;
 }
 body{
+    min-height: 100%;
     margin: 0;
-    background: #215A29;
+    background: rgba(49, 124, 101, 0.7);
     background-image: url('../Images/les4.jpg');
     background-repeat: repeat;
     overflow-y: auto;
@@ -62,7 +60,7 @@ nav{
     padding: 0.1%;
 }
     .menu:hover{
-        background-color: #FA5858;
+        background-color: rgba(250, 88, 88, 0.7);
         border-color: #FA5858;
     }
 /*Шапка*/
@@ -109,7 +107,6 @@ header{
 .basis{
     max-width:1200px;
     min-width:500px;
-    min-height: 100%;
     margin:auto;
     position: relative;
 }
