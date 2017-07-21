@@ -1,9 +1,8 @@
 
 //Загрузка на страницах шапки (не работает)
 $(document).ready(function () {
-    $("#headr").load("..\headr.html", function () {
-        alert('ok');
-    });
+    $("#headr_index").load("./blocks/headr_index.html");
+    $("#headr_osnova").load("../blocks/headr_osnova.html");
 
     $('.menu').mouseover(function () {
         $('.menu').css("text-decoration", "underline");
