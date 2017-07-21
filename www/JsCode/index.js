@@ -1,19 +1,48 @@
 
-//Загрузка на страницах шапки (не работает)
 $(document).ready(function () {
-    $("#headr_index").load("./blocks/headr_index.html");
-    $("#headr_osnova").load("../blocks/headr_osnova.html");
+    $("#headr_index").load("./blocks/headr.html #headr_index");
+    $("#headr_osnova").load("../blocks/headr.html #headr_osnova");
+    $("#footer").load("../blocks/footer.html");
 
-    $('.menu').mouseover(function () {
-        $('.menu').css("text-decoration", "underline");
+    setInterval(function () {
+        if ($("header").css("height") > "200px")
+            $("#header_img").hide(300);
+        else $("#header_img").show(300);
+    }, 100);
+
+    $('#cat').click(function () {
+        if ($('.title').is(":visible")) $('#result').show(200, function () {
+            $('.title').hide(300);
+            $('.chCol').hide(300);
+        });
+        else $('.title').show(300, function () {
+                $('.chCol').show(300);
+                $('#result').hide(200);
+            });
     });
 
-    $('#headr').click(function () {
-        $('html, body').animate({
-            scrollTop: $($(this).attr('href')).offset().top
-        }, 1500);
-        return false;
+    $(".vote_img").click(function () {
+        console.log("vote_img");
+        if ($('aside').css("width") < "50%") {
+            console.log("change");
+            $("aside").css("width","66.3%");
+            $(".txt").css("width","30%");
+        } else { 
+            console.log("change 2");
+            $("aside").css("width", "30%");
+            $(".txt").css("width", "66.3%");
+        }
     });
+
+    $("#nachalo_but").click(function() {
+      $("html, body").animate({
+         scrollTop: $($(this).attr("href")).offset().top + "px"
+      }, {
+         duration: 500,
+         easing: "swing"
+      });
+      return false;
+   });
 
     $("answer").submit(function (event) {
         event.preventDefault();
@@ -48,17 +77,6 @@ function changeCol(color) {
     var cat = document.getElementById("cat");
     if (color == 'blue') cat.style.color = '#80C3CE';
     else cat.style.color = "white";
-}
-
-//Опрос /сколько котиков/
-function answ() {
-    alert("Заходим в функцию");
-    ans = document.getElementById('answ');
-    alert(ans);
-    if (ans == 1) result = "Ну... Если лев котик, то да";
-    else if (ans == 2) result = "Ты дурак чтоль? Где ты там столько увидел?";
-    else result = "Что-то ты не шаришь в видах животных...";
-    alert(result);
 }
 
 //Комментарии

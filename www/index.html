@@ -2,24 +2,24 @@
 <html>
 
 <head>
+    <title>Catanri</title>
     <!-- Тут всякие крутые штуки для IE и не только-->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- А тут остальное -->
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
-    <title>Catanri</title>
     <link rel="stylesheet" href="./CssCode/style.css">
     <link rel="stylesheet" href="./CssCode/ForAll.css">
     <link rel="shortcut icon" href="./Icons/cat2.ico" type="image/x-icon">
-    <!--<script type="text/javascript" src="..\node_modules\jquery\dist\jquery.js"></script>-->
     <script src="./JsCode/index.js"></script>
-    <link rel="import" href="./blocks/headr_index.html">
+    <link rel="import" href="./blocks/headr.html">
+    <link rel="import" href="./blocks/footer.html">
 </head>
 
 <body>
     <div id="headr_index"></div>
-     <main>
+    <main>
         <!--Основная секция-->
         <section class="basis">
             <!--Блок слева (типа боковая панель)-->
@@ -29,8 +29,8 @@
                     <img class="vote_img" alt="Пес, лев и крольчиха" src="./Images/9988.jpg">
                     <p class="vote_question">Сколько тут котеек?</p>
                     <form class="vote_form" name="answer">
-                        <input id="answ" style="width:30%;" type="number" name="cm">
-                        <input type="submit" value="Проверить">
+                        <input id="answ" class="but" style="width:30%;" type="number" name="cm">
+                        <input type="submit" class="but" value="Проверить">
                     </form>
                 </section>
                 <!--Информация-->
@@ -47,7 +47,7 @@
                     <h3 class="reklama_annotation">Это реклама, смирись</h3>
                 </div>
                 <!--Навигация по странице-->
-                <input id="nachalo_but" type="button" style="margin-left:0;" class="but" value="В начало" onClick='location.href="#nachalo"'>
+                <a id="nachalo_but" style="margin-left:0;font-size:145%;margin-top:5%;" class="but" href="#headr_index"><br>В начало</a>
             </aside>
             <!--Блок справа-->
             <div class="main_section">
@@ -56,7 +56,7 @@
                     <h3 class="txt_title">Знаешь, кто я?</h3>
                     <article class="txt_text">
                         <p>Spanri, люблю рисовать и есть мандарины, привет.</p>
-                        <img src="./Images/одж.jpg" alt="Необычный кот(рисунок)" title="Необычный, да?" class="txt_img">
+                        <img id="cat" src="./Images/одж.jpg" alt="Необычный кот(рисунок)" title="Нажми на меня" class="txt_img">
                         <p>В 2011 году я нашла <a href="https://multator.ru">этот сайт</a> и задержалась на нем аж 2 года! Я
                             постоянно рисовала там, точнее анимировала и уже спустя месяц думала, что я крутой профессиональный
                             художник. К слову, я ни разу тогда не работала в графическом редакторе лучше paint, да и анимации
@@ -77,6 +77,18 @@
                             вдохновение было. Оно оооочень важно! У меня это музыка и чужие арты. Когда я просматриваю группы
                             артеров, у меня начинают чесаться руки и я хочу творить! Нормально ли это? Надеюсь, да...
                         </p>
+                        <p>Имя: Козлова Анна Сергеевна <br>Кличка: Спанри <br>Дата рождения: 02,12,1997(16 лет) <br>Знак: Стрелец
+                            <br>Любимый цвет на данный момент: нежно салатовый <br>Многие думают, что я сумасшедшая. А я
+                            просто думаю, что коты клевые, а также о смысле жизни. Да, у меня часто возникают неожиданные
+                            неприличные мысли, но это же только мысли. Если ты хочешь со мной подружиться, то ты должен быть
+                            художником, не против манги и аниме, быть простым или сложным(XD)... Ну и не быть долбое*ом.
+                            <br>Я люблю спать. Очень. Но вечно не высыпаюсь. Я не понимаю анархистов. Кому я доверяю? Животным.
+                            Мечтаю о том, что бы жизнь стала легкой. И чтобы пропала из школы физика. И о хорошем зрении.
+                            Воспоминания? О том, как я раскрыла совй секрет детства. Брату. Как устраивала с друзьями бои
+                            на траве(даже не спрашивайте) и то, как строила с ними же крутой домик. <br>Меня раздражает лицемерство,
+                            возвышение себя над другими, даже самое маленькое. Бесит тупизм, момент, когда при разговоре
+                            тебя перебивают или вообще не слышат. Я каждый день: читаю мангу, слушаю музыку, играю в планш,
+                            учусь, воображаю на всякие темы, думаю о котиках, смысле жизни.</p>
                     </article>
                 </section>
             </div>
@@ -84,12 +96,7 @@
         </section>
     </main>
     <!--Подвал сайта-->
-    <footer>
-        <p>&copy; 2017 Spanri <br> Контакты: <a href="https://vk.com/animeshny_kot">vkontakte</a>, Telegram/WhatsApp: +7 925
-            342 90 60
-            </a>
-        </p>
-    </footer>
+    <div id="footer"></div>
 </body>
 
 </html>

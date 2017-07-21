@@ -14,6 +14,9 @@
         margin-bottom:1%;
         width:90%;
     }
+        .vote_img:hover{
+            cursor: pointer;
+        }
     .vote_question{
         display:inline-block;
         width:30%;
