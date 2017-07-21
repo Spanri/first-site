@@ -1,6 +1,21 @@
 
+/*Другое*/
+.vertical{
+    top:20%;
+    left:0;
+    position:fixed;
+    z-index:1;
+    color:white;
+    background:rgba(111, 169, 120, 0.7);
+    writing-mode:vertical-lr;
+    font-size:1.5em;margin:0;
+}
 a{
     text-decoration: none;
+    color: white;
+}
+main{
+    min-height:100%;
 }
 html{
   height: 100%;
@@ -12,6 +27,17 @@ body{
     background-repeat: repeat;
     overflow-y: auto;
 }
+aside{
+    width:30%;
+    margin:1%;
+    margin-top:0;
+    float: left;
+    /*display: inline-block;*/
+}
+.empty{
+    height: 120px;
+    clear: both;
+}
 /*Навигация*/
 nav{
     position:fixed;
@@ -19,19 +45,23 @@ nav{
     width:100%;
     margin:0;
     padding:0;
+    z-index:100;
+    background:rgba(255, 198, 198, 1);
+    text-align:center;
 }
-.but0{
+.menu{
     background-color: rgba(255, 198, 198, 1);
     color: white;
-    font-size: 140%;
+    font-size: 142%;
     overflow: hidden;
+    font-family: fantasy;
     text-overflow: ellipsis;
     width: 14%;
     border: 0;
     padding: 0.1%;
 }
 /*Шапка*/
-.slogan,.but0,.date,header{
+.slogan,.menu,.date,header{
     display: inline-block;
     margin: 0;
 }
@@ -39,34 +69,42 @@ header{
     background-color: rgba(111, 169, 120, 0.7);
     width: 100%;
     min-width: 500px;
-    margin-top: 2.3%;
-    /*height: 200px;*/
+    margin-top: 3.4%;
+    margin-bottom: 1%;
+    position:relative;
 }
-.maindesc{
-    font-size:450%;
-    margin-left: 3%;
-    margin-top:0%;
-    margin-bottom: 5%;
-    color: white;
-}
-.slogan{
-    font-size:28px;
-    -webkit-text-stroke:0.5px;
-    color: whitesmoke;
-    font:italic;
-}
-.date{
-    margin-left:0%;
-    color:whitesmoke;
-    font-size:50px;
-}
+    .changeCol{
+        padding:0;
+        display:inline-block;
+        width:45%;
+        background-color: rgba(0, 0, 0, 0);
+    }
+    .title{
+        font-size:450%;
+        margin-left: 3%;
+        margin-top:0%;
+        margin-bottom: 5%;
+        color: white;
+    }
+    .slogan{
+        font-size:28px;
+        -webkit-text-stroke:0.5px;
+        color: whitesmoke;
+        font:italic;
+    }
+    .date{
+        margin-left:0%;
+        color:whitesmoke;
+        font-size:50px;
+    }
 /*Основная часть*/
-.maxsec{
+.basis{
     max-width:1200px;
     min-width:500px;
     min-height: 100%;
     margin:auto;
     position: relative;
+    display: inline-block;
 }
 .but{
     /*box-shadow: -3px 5px  #27496d;*/

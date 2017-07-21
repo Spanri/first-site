@@ -11,104 +11,108 @@
     <link rel="stylesheet" href="./CssCode/style.css">
     <link rel="stylesheet" href="./CssCode/ForAll.css">
     <link rel="shortcut icon" href="./Icons/cat2.ico" type="image/x-icon">
-    <script type="text/javascript" src="..\node_modules\jquery\dist\jquery.js"></script>
+    <!--<script type="text/javascript" src="..\node_modules\jquery\dist\jquery.js"></script>-->
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
     <script src="./JsCode/index.js"></script>
     <link rel="import" href="headr.html">
 </head>
 
 <body>
-    <main>
-    <!--Навигация-->
-    <nav style="z-index:100;background:rgba(255, 198, 198, 1);text-align:center;">
-        <a class="but0"  href="index.html">Главная</a><a
-        class="but0" href="./Osnova/why.html">Заметки</a><a class="but0"
-       href="./Osnova/second.html">Код js</a><a class="but0"
-        href="./Osnova/comment.html">Комменты</a><a class="but0"  href="./404.html"
-        >Заказ арта</a><a class="but0" href="./404.html">Новости</a><a
-        class="but0" href="./Osnova/my_art.html">Где я есть</a>
-    </nav>
-    <p class="vert" style="top:20%;left:0;position:fixed;z-index:1;color:white;background:rgba(111, 169, 120, 0.7);;writing-mode:vertical-lr;font-size:1.5em;margin:0;">Этот сайт пока не очень, соооори</p>
-    <!--Шапка-->
-    <header id="nachalo" style="position:relative;">
-        <div style="display:inline-block;margin-left:1%;">
-            <div style="width:100%;">
-                <button class="but" style="padding:0;display:inline-block;width:45%;background-color: rgba(0, 0, 0, 0);"
-                    onclick="changeCol('blue')">Синий</button></option>
-                <button class="but" style="padding:0;display:inline-block;width:45%;background-color: rgba(0, 0, 0, 0);" onclick="changeCol('notBlue')">Белый</button></option>
+    <div id="headr"></div>
+     <main>
+        <!--Навигация-->
+        <nav>
+            <a class="menu" href="index.html">Главная</a><a 
+            class="menu" href="./Osnova/why.html">Заметки</a><a 
+            class="menu" href="./Osnova/codejs.html">Код js</a><a 
+            class="menu" href="./Osnova/comment.html">Комменты</a><a 
+            class="menu" href="./404.html">Заказ арта</a><a 
+            class="menu" href="./404.html">Лучшее</a><a 
+            class="menu" href="./Osnova/my_art.html">Где я есть</a>
+        </nav>
+        <p class="vertical">Этот сайт пока не очень, соооори</p>
+        <!--Шапка-->
+        <header id="nachalo">
+            <div style="display:inline-block;margin-left:1%;">
+                <div style="width:100%;">
+                    <button class="but" class="changeCol" onclick="changeCol('blue')">Синий</button></option>
+                    <button class="but" class="changeCol" onclick="changeCol('notBlue')">Белый</button></option>
+                </div>
+                <h2 id="cat" class="title">Spanri</h2>
             </div>
-            <h2 id="cat" class="maindesc">Spanri</h2>
-        </div>
-        <img src="./Images/forest.png" style="margin-left:3%;padding-top:1%;">
-        <div style="display:inline-block;position:absolute;right:1%;top:12%;">
-            <h3 class="slogan" title="но не бешеных"><i>Время гладить котят!</i></h3>
-            <p id="date" class="date"></p>
-        </div>
-    </header>
-    <!--Основная секция-->
-    <section class="maxsec">
-        <!--Блок справа-->
-        <section style="float:left;width:30%;margin:1%;margin-top:0;">
-            <!--Сколько тут котеек+картинка+кнопка-->
-            <section class="catq">
-                <img alt="Пес, лев и крольчиха" style="margin:5%;margin-bottom:1%;" width="90%" src="./Images/9988.jpg">
-                <p class="dec" style="display:inline-block;width:30%;margin:5%;margin-top:0;margin-bottom:3%;">Сколько тут котеек?</p>
-                <div style="display:inline-block;width:50%;padding-top:10%;">
-                    <form action="" onsubmit="answ();">
+            <img src="./Images/forest.png" style="margin-left:3%;padding-top:1%;">
+            <div style="display:inline-block;position:absolute;right:1%;top:12%;">
+                <h3 class="slogan" title="но не бешеных"><i>Время гладить котят!</i></h3>
+                <p id="date" class="date"></p>
+            </div>
+        </header>
+        <!--Основная секция-->
+        <section class="basis">
+            <!--Блок слева (типа боковая панель)-->
+            <aside>
+                <!--Сколько тут котеек+картинка+кнопка-->
+                <section class="vote">
+                    <img class="vote_img" alt="Пес, лев и крольчиха" src="./Images/9988.jpg">
+                    <p class="vote_question">Сколько тут котеек?</p>
+                    <form class="vote_form" name="answer">
                         <input id="answ" style="width:30%;" type="number" name="cm">
-                        <br>
                         <input type="submit" value="Проверить">
                     </form>
+                </section>
+                <!--Информация-->
+                <p class="sorry">
+                    Тут куча всяких примочек (возможно, ненужных) только для того, чтоб я научилась их юзать, если что)
+                </p>
+                <!--Реклама-->
+                <input class="reklama_but" id="reklama_but" value="Нажми меня, тут котик, честно" onclick="rekl()" type="button">
+                <div class="reklama" id="reklama">
+                    <h2 class="reklama_title">Самый лучший паблик c артами:</h2>
+                    <a class="reklama_link" href="https://vk.com/art_nysha">
+                        <h2>Кликни сюда и подпишись<br> во славу котикам!</h2>
+                    </a>
+                    <h3 class="reklama_annotation">Это реклама, смирись</h3>
                 </div>
-            </section>
-            <!--Реклама-->
-            <input id="butRekl" class="butrekl" value="Нажми меня, тут котик, честно" onclick="rekl()" type="button">
-            <div id="rekl" class="reklama" style="display:none;">
-                <h2 class="dec" style="text-align:center;padding-top:2%">Самый лучший паблик c артами:</h2>
-                <a href="https://vk.com/art_nysha">
-                    <h2 style="text-align:center;color:white;">Кликни сюда и подпишись<br> во славу котикам!</h2>
-                </a>
-                <h3 style="text-align:center;color:#27496d;padding-bottom:2%">Это реклама, смирись</h3>
+                <!--Навигация по странице-->
+                <input id="nachalo_but" type="button" style="margin-left:0;" class="but" value="В начало" onClick='location.href="#nachalo"'>
+            </aside>
+            <!--Блок справа-->
+            <div class="main_section">
+                <!--Текст про котиков-->
+                <section class="txt">
+                    <h3 class="txt_title">Знаешь, кто я?</h3>
+                    <article class="txt_text">
+                        <p>Spanri, люблю рисовать и есть мандарины, привет.</p>
+                        <img src="./Images/одж.jpg" alt="Необычный кот(рисунок)" title="Необычный, да?" class="txt_img">
+                        <p>В 2011 году я нашла <a href="https://multator.ru">этот сайт</a> и задержалась на нем аж 2 года! Я
+                            постоянно рисовала там, точнее анимировала и уже спустя месяц думала, что я крутой профессиональный
+                            художник. К слову, я ни разу тогда не работала в графическом редакторе лучше paint, да и анимации
+                            у меня были мягко говоря не очень... А еще у меня был планшет genius. Не берите genius.
+                        </p>
+                        <p>И вот, однажды, на multator пришла крутая художница, нарисовала анимацию и оставила ссылку на свою
+                            группу вк. Это была Коул. После этого мне стало интересно, действительно ли вк есть еще художники
+                            со своими группами. И их оказалось море! Я скачала paint tool sai и принялась творить. И до сих
+                            пор творю.
+                        </p>
+                        <p>
+                            Последнее время мне нравится осваивать новые программы. Я немного освоилась в adobe illustrator и adobe photoshop. Еще собираюсь
+                            скачать sketch и уже скачала corel painter...
+                        </p>
+                        <p>
+                            Творец, помни: если тебе кажется, что у тебя ничего так вышло, это в 98% случаев не так!!!! Хотя у меня есть пара работ,
+                            которые мне нравятся до сих пор. В основном, это те работы, которые я рисовала очень долго. Или
+                            вдохновение было. Оно оооочень важно! У меня это музыка и чужие арты. Когда я просматриваю группы
+                            артеров, у меня начинают чесаться руки и я хочу творить! Нормально ли это? Надеюсь, да...
+                        </p>
+                    </article>
+                </section>
             </div>
-            <!--Навигация по странице-->
-            <input id="nachalo_but" type="button" style="margin-left:0;" class="but" value="В начало" onClick='location.href="#nachalo"'>
+            <div class="empty"></div>
         </section>
-        <!--Блок слева-->
-        <section style="margin:1%;">
-            <!--Текст про котиков-->
-            <section class="txt">
-                <h3 class="dec" style="text-align:center;">Знаешь, кто я?</h3>
-                <article style="margin:2%;color:whitesmoke;font-size:120%;">
-                    <p>Spanri, люблю рисовать и есть мандарины, привет.</p>
-                    <img src="./Images/одж.jpg" alt="Необычный кот(рисунок)" title="Необычный, да?" class="txtimg">
-                    <p>В 2011 году я нашла <a href="https://multator.ru">этот сайт</a> и задержалась на нем аж 2 года! Я постоянно
-                        рисовала там, точнее анимировала и уже спустя месяц думала, что я крутой профессиональный художник.
-                        К слову, я ни разу тогда не работала в графическом редакторе лучше paint, да и анимации у меня были
-                        мягко говоря не очень... А еще у меня был планшет genius. Не берите genius.
-                    </p>
-                    <p>И вот, однажды, на multator пришла крутая художница, нарисовала анимацию и оставила ссылку на свою группу
-                        вк. Это была Коул. После этого мне стало интересно, действительно ли вк есть еще художники со своими
-                        группами. И их оказалось море! Я скачала paint tool sai и принялась творить. И до сих пор творю.
-                    </p>
-                    <p>
-                        Последнее время мне нравится осваивать новые программы. Я немного освоилась в adobe illustrator и adobe photoshop. Еще собираюсь
-                        скачать sketch и уже скачала corel painter...
-                    </p>
-                    <p>
-                        Творец, помни: если тебе кажется, что у тебя ничего так вышло, это в 98% случаев не так!!!! Хотя у меня есть пара работ,
-                        которые мне нравятся до сих пор. В основном, это те работы, которые я рисовала очень долго. Или вдохновение
-                        было. Оно оооочень важно! У меня это музыка и чужие арты. Когда я просматриваю группы артеров, у
-                        меня начинают чесаться руки и я хочу творить! Нормально ли это? Надеюсь, да...
-                    </p>
-                </article>
-            </section>
-        </section>
-        <div style="height: 120px;clear: both;"></div>
-    </section>
     </main>
     <!--Подвал сайта-->
     <footer>
-        <p>&copy; 2017 Spanri <br> Контакты: <a href="https://vk.com/animeshny_kot">vkontakte</a>, Telegram/WhatsApp: +7 925 342
-            90 60
+        <p>&copy; 2017 Spanri <br> Контакты: <a href="https://vk.com/animeshny_kot">vkontakte</a>, Telegram/WhatsApp: +7 925
+            342 90 60
             </a>
         </p>
     </footer>
