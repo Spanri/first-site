@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Catanri</title>
+    <!-- Тут всякие крутые штуки для IE и не только-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" media="screen and (orientation: portrait) and
+    (max-width:640px), projection" "href=»style.css" />
+    <link rel="stylesheet" media="screen and (orientation: portrait) and
+    (max-width:1024px), projection" "href=»style.css" />
+    <link rel="stylesheet" media="screen and (orientation: portrait) and
+    (min-width:1280px), projection" "href=»style.css" />
+    <!-- А тут остальное -->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="./CssCode/style.css">
+    <link rel="stylesheet" href="./CssCode/ForAll.css">
+    <link rel="shortcut icon" href="./Icons/cat2.ico" type="image/x-icon">
+    <script src="./JsCode/index.js"></script>
+    <link rel="import" href="./blocks/headr.html">
+    <link rel="import" href="./blocks/footer.html">
+</head>
+
+<body>
+    <!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+    (function (d, w, c) {
+        (w[c] = w[c] || []).push(function() {
+            try {
+                w.yaCounter45389973 = new Ya.Metrika({
+                    id:45389973,
+                    clickmap:true,
+                    trackLinks:true,
+                    accurateTrackBounce:true
+                });
+            } catch(e) { }
+        });
+
+        var n = d.getElementsByTagName("script")[0],
+            s = d.createElement("script"),
+            f = function () { n.parentNode.insertBefore(s, n); };
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+        if (w.opera == "[object Opera]") {
+            d.addEventListener("DOMContentLoaded", f, false);
+        } else { f(); }
+    })(document, window, "yandex_metrika_callbacks");
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/45389973" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+    #headr_index
+    %main
+        <!--Основная секция-->
+        %section.basis
+            <!--Блок слева (типа боковая панель)-->
+            %aside
+                <!--Сколько тут котеек+картинка+кнопка-->
+                %section.vote
+                    %img.vote_img(alt="Пес, лев и крольчиха" src="./Images/9988.jpg")
+                    %p.vote_question Сколько тут котеек?
+                    %form.vote_form(name="answer")
+                        %input#answ.but(style="width:30%;" type="number" name="cm")
+                        %input(type="submit" class="but" value="Проверить")
+                <!--Информация-->
+                %p.sorry Тут куча всяких примочек (возможно, ненужных) только для того, чтоб я научилась их юзать, если что)
+                <!--Реклама-->
+                %input.reklama_but#reklama_but(value="Нажми меня, тут котик, честно" onclick="rekl()" type="button")
+                .reklama#reklama
+                    %h2.reklama_title Самый лучший паблик c артами:
+                    %a.reklama_link(href="https://vk.com/art_nysha")
+                        %h2 Кликни сюда и подпишись<br> во славу котикам!
+                    %h3 class="reklama_annotation" Это реклама, смирись
+                <!--Навигация по странице-->
+                %a#nachalo_but.but(style="margin-left:0;font-size:145%;margin-top:5%;" href="#headr_index")
+                  %br В начало
+            <!--Блок справа-->
+            .main_section
+                <!--Текст про котиков-->
+                %section.txt
+                    %h3.txt_title Знаешь, кто я?
+                    %article.txt_text
+                        %p  Spanri, люблю рисовать и есть мандарины, привет.
+                        %img(id="cat" src="./Images/одж.jpg" alt="Необычный кот(рисунок)" title="Нажми на меня" class="txt_img")
+                        %p  В 2011 году я нашла <a href="https://multator.ru">этот сайт</a> и задержалась на нем аж 2 года! Я
+                            постоянно рисовала там, точнее анимировала и уже спустя месяц думала, что я крутой профессиональный
+                            художник. К слову, я ни разу тогда не работала в графическом редакторе лучше paint, да и анимации
+                            у меня были мягко говоря не очень... А еще у меня был планшет genius. Не берите genius.
+                        %p  И вот, однажды, на multator пришла крутая художница, нарисовала анимацию и оставила ссылку на свою
+                            группу вк. Это была Коул. После этого мне стало интересно, действительно ли вк есть еще художники
+                            со своими группами. И их оказалось море! Я скачала paint tool sai и принялась творить. И до сих
+                            пор творю.
+                        %p  Последнее время мне нравится осваивать новые программы. Я немного освоилась в adobe illustrator и adobe photoshop. Еще собираюсь
+                            скачать sketch и уже скачала corel painter...
+                        %p  Творец, помни: если тебе кажется, что у тебя ничего так вышло, это в 98% случаев не так!!!! Хотя у меня есть пара работ,
+                            которые мне нравятся до сих пор. В основном, это те работы, которые я рисовала очень долго. Или
+                            вдохновение было. Оно оооочень важно! У меня это музыка и чужие арты. Когда я просматриваю группы
+                            артеров, у меня начинают чесаться руки и я хочу творить! Нормально ли это? Надеюсь, да...
+                        %p  Имя: Козлова Анна Сергеевна <br>Кличка: Спанри <br>Дата рождения: 02,12,1997(16 лет) <br>Знак: Стрелец
+                            <br>Любимый цвет на данный момент: нежно салатовый <br>Многие думают, что я сумасшедшая. А я
+                            просто думаю, что коты клевые, а также о смысле жизни. Да, у меня часто возникают неожиданные
+                            неприличные мысли, но это же только мысли. Если ты хочешь со мной подружиться, то ты должен быть
+                            художником, не против манги и аниме, быть простым или сложным(XD)... Ну и не быть долбое*ом.
+                            <br>Я люблю спать. Очень. Но вечно не высыпаюсь. Я не понимаю анархистов. Кому я доверяю? Животным.
+                            Мечтаю о том, что бы жизнь стала легкой. И чтобы пропала из школы физика. И о хорошем зрении.
+                            Воспоминания? О том, как я раскрыла совй секрет детства. Брату. Как устраивала с друзьями бои
+                            на траве(даже не спрашивайте) и то, как строила с ними же крутой домик. <br>Меня раздражает лицемерство,
+                            возвышение себя над другими, даже самое маленькое. Бесит тупизм, момент, когда при разговоре
+                            тебя перебивают или вообще не слышат. Я каждый день: читаю мангу, слушаю музыку, играю в планш,
+                            учусь, воображаю на всякие темы, думаю о котиках, смысле жизни.</p>
+
+            .empty
+    <!--Подвал сайта-->
+    #footer
