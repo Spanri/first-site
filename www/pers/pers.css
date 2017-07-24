@@ -1,0 +1,106 @@
+header {
+            width: 100%;
+            /*background: linear-gradient(0deg,#FCA8CA,#304D9E);*/
+            background-image: url('zakat.jpg');
+            background-size: 100% 100%;
+            margin: 0;
+            margin-bottom: 1%;
+        }
+
+        .header_block {
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        .header_rioto {
+            width: 21%;
+            margin-left: 5%;
+            margin-top: 2%;
+        }
+
+        .header_aeli {
+            width: 21%;
+            margin-left: 2%;
+            margin-top: 2%;
+        }
+
+        .header_richard {
+            width: 21%;
+            margin-left: 2%;
+            margin-top: 2%;
+        }
+
+        .header_tim {
+            width: 21%;
+            margin-left: 2%;
+            margin-top: 2%;
+        }
+
+        .header_candy {
+            width: 23%;
+            margin-top: 2%;
+            margin-left: 5%;
+            margin-bottom: 2%;
+        }
+
+        .header_but {
+            width: 46%;
+            display: inline-block;
+        }
+
+        .header_but2 {
+            text-decoration: none;
+            color: white;
+            padding: 1.5%;
+            font-size: 1.7em;
+            border: 2px solid white;
+            border-radius: 13px;
+            -webkit-text-stroke: 1px white;
+            background: rgba(0, 0, 0, 0);
+        }
+
+        .head {
+            padding: 10%;
+            padding-left: 0;
+            padding-right: 0;
+            margin: auto;
+            text-align: center;
+        }
+
+        .header_vadim {
+            width: 23%;
+            margin-top: 2%;
+            margin-bottom: 2%;
+        }
+
+        body {
+            min-height: 100%;
+            background: url('foon.png');
+            background-size: auto 100%;
+            margin: 0;
+        }
+
+        html {
+            min-height: 100%;
+        }
+
+        main {
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        .block {
+            background: #DCE4EB;
+            min-height: 100px;
+            margin: 2%;
+        }
+        footer{
+            padding: 1%;
+            text-align: center;
+        }
+
+        @media all and (max-width: 770px) {
+            .header_but2 {
+                font-size: 1.3em;
+            }
+        }

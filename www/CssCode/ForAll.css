@@ -19,7 +19,8 @@ height: 100%;
 }
 body{
     min-height: 100%;
-    margin: 0;
+    max-width:1200px;
+    margin:auto;
     background: rgba(49, 124, 101, 0.7);
     background-image: url('../Images/les4.jpg');
     background-repeat: repeat;
@@ -29,6 +30,7 @@ aside{
     width:30%;
     margin:1%;
     margin-top:0;
+    margin-left: 0;
     float: left;
     /*display: inline-block;*/
 }
@@ -40,12 +42,20 @@ aside{
 nav{
     position:fixed;
     top:0;
-    width:100%;
+    width:1200px;
     margin:0;
     padding:0;
     z-index:100;
     background:rgba(255, 198, 198, 1);
     text-align:center;
+}
+@media (handheld) and (max-width:870px){
+    nav{
+        font-size: 90%;
+    }
+    .header_img, .sloda{
+        display: none;
+    }
 }
 .menu{
     background-color: rgba(255, 198, 198, 1);
@@ -71,7 +81,6 @@ nav{
 header{
     background-color: rgba(111, 169, 120, 0.7);
     width: 100%;
-    min-width: 500px;
     margin-top: 30px;
     margin-bottom: 1%;
     position:relative;
@@ -106,7 +115,6 @@ header{
 /*Основная часть*/
 .basis{
     max-width:1200px;
-    min-width:500px;
     margin:auto;
     position: relative;
 }

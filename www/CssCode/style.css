@@ -31,7 +31,7 @@
     .vote_form{
         display:inline-block;
         width:50%;
-        padding-top:10%;
+        padding-top:0%;
     }
 .main_section{
    /* display: inline-block;*/
@@ -40,7 +40,7 @@
 }
 .txt{
     min-height: 200px;
-    width: 66.3%;
+    width: 69%;
     display: inline-block;
 }
     .txt_img{
