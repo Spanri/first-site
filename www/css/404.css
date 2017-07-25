@@ -1,0 +1,13 @@
+
+.not_found{
+  margin:auto;margin-top:10%;
+  background: rgba(111, 169, 170, 0.7);
+  width:500px;
+}
+  .not_found_h1{
+    padding:20%;
+    padding-bottom:8%;
+    padding-top:10%;
+    text-align:center;
+    color:white;
+  }

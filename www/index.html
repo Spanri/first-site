@@ -7,18 +7,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" media="screen and (orientation: portrait) and 
+    <link rel="stylesheet" media="screen and (orientation: portrait) and
     (max-width:640px), projection" "href=»style.css" />
-    <link rel="stylesheet" media="screen and (orientation: portrait) and 
+    <link rel="stylesheet" media="screen and (orientation: portrait) and
     (max-width:1024px), projection" "href=»style.css" />
-    <link rel="stylesheet" media="screen and (orientation: portrait) and 
+    <link rel="stylesheet" media="screen and (orientation: portrait) and
     (min-width:1280px), projection" "href=»style.css" />
     <!-- А тут остальное -->
+    <script src="./js/bootstrap.js";></script>
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/bootstrap-theme.css">
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
-    <link rel="stylesheet" href="./CssCode/style.css">
-    <link rel="stylesheet" href="./CssCode/ForAll.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/ForAll.css">
     <link rel="shortcut icon" href="./Icons/cat2.ico" type="image/x-icon">
-    <script src="./JsCode/index.js"></script>
+    <script src="./js/index.js"></script>
     <link rel="import" href="./blocks/headr.html">
     <link rel="import" href="./blocks/footer.html">
 </head>
@@ -37,7 +40,6 @@
                 });
             } catch(e) { }
         });
-
         var n = d.getElementsByTagName("script")[0],
             s = d.createElement("script"),
             f = function () { n.parentNode.insertBefore(s, n); };
@@ -57,7 +59,7 @@
         <!--Основная секция-->
         <section class="basis">
             <!--Блок слева (типа боковая панель)-->
-            <aside>
+            <aside class="hidden-sm hidden-xs">
                 <!--Сколько тут котеек+картинка+кнопка-->
                 <section class="vote">
                     <img class="vote_img" alt="Пес, лев и крольчиха" src="./Images/9988.jpg">
@@ -81,7 +83,9 @@
                     <h3 class="reklama_annotation">Это реклама, смирись</h3>
                 </div>
                 <!--Навигация по странице-->
-                <a id="nachalo_but" style="margin-left:0;font-size:145%;margin-top:5%;" class="but" href="#headr_index"><br>В начало</a>
+                <div style="margin-left:0; margin-top:5%; margin-bottom:5%"><a id="nachalo_but" style="font-size:145%;" class="but" href="#headr_index">В начало</a></div>
+                <!--Цель-->
+                <iframe src="https://smartprogress.do/goal/embed/275030/?user_id=261987" frameborder="0" width="100%" height="150"></iframe>
             </aside>
             <!--Блок справа-->
             <div class="main_section">
