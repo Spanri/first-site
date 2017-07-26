@@ -22,7 +22,7 @@ a{
     color: white;
 }
 html, body{
-height: 100%;
+  height: 100%;
 }
 body{
     min-height: 100%;
@@ -34,12 +34,10 @@ body{
     overflow-y: auto;
 }
 aside{
-    width:30%;
+    /*width:30%;*/
     margin:1%;
     margin-top:0;
     margin-left: 0;
-    float: left;
-    /*display: inline-block;*/
 }
 .empty{
     height: 120px;
@@ -55,14 +53,6 @@ nav{
     z-index:100;
     background:rgba(255, 198, 198, 1);
     text-align:center;
-}
-@media (handheld) and (max-width:870px){
-    nav{
-        font-size: 90%;
-    }
-    .header_img, .sloda{
-        display: none;
-    }
 }
 .menu{
     background-color: rgba(255, 198, 198, 1);

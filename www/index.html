@@ -1,140 +1,104 @@
-<!DOCTYPE html>
-<html>
-
-<head>
+<!DOCTYPE html><html><head>
     <title>Catanri</title>
     <!-- Тут всякие крутые штуки для IE и не только-->
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" media="screen and (orientation: portrait) and
-    (max-width:640px), projection" "href=»style.css" />
-    <link rel="stylesheet" media="screen and (orientation: portrait) and
-    (max-width:1024px), projection" "href=»style.css" />
-    <link rel="stylesheet" media="screen and (orientation: portrait) and
-    (min-width:1280px), projection" "href=»style.css" />
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <!-- А тут остальное -->
-    <script src="./js/bootstrap.js";></script>
-    <link rel="stylesheet" href="./css/bootstrap.css">
-    <link rel="stylesheet" href="./css/bootstrap-theme.css">
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/ForAll.css">
-    <link rel="shortcut icon" href="./Icons/cat2.ico" type="image/x-icon">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js" type="text/javascript"></script>
+    <link href="./css/style.css" rel="stylesheet">
+    <link href="./css/ForAll.css" rel="stylesheet">
+    <link href="./Icons/cat2.ico" rel="shortcut icon" type="image/x-icon">
     <script src="./js/index.js"></script>
-    <link rel="import" href="./blocks/headr.html">
-    <link rel="import" href="./blocks/footer.html">
-</head>
-
-<body>
+    <link href="./blocks/headr.html" rel="import">
+    <link href="./blocks/footer.html" rel="import">
+  </head><body>
     <!-- Yandex.Metrika counter -->
-<script type="text/javascript" >
-    (function (d, w, c) {
+    <script>
+      (function (d, w, c) {
         (w[c] = w[c] || []).push(function() {
-            try {
-                w.yaCounter45389973 = new Ya.Metrika({
-                    id:45389973,
-                    clickmap:true,
-                    trackLinks:true,
-                    accurateTrackBounce:true
-                });
-            } catch(e) { }
+          try {
+            w.yaCounter45389973 = new Ya.Metrika({
+              id:45389973,
+              clickmap:true,
+              trackLinks:true,
+              accurateTrackBounce:true
+            });
+          } catch(e) { }
         });
         var n = d.getElementsByTagName("script")[0],
-            s = d.createElement("script"),
-            f = function () { n.parentNode.insertBefore(s, n); };
+          s = d.createElement("script"),
+          f = function () { n.parentNode.insertBefore(s, n); };
         s.type = "text/javascript";
         s.async = true;
         s.src = "https://mc.yandex.ru/metrika/watch.js";
-
         if (w.opera == "[object Opera]") {
-            d.addEventListener("DOMContentLoaded", f, false);
+          d.addEventListener("DOMContentLoaded", f, false);
         } else { f(); }
-    })(document, window, "yandex_metrika_callbacks");
-</script>
-<noscript><div><img src="https://mc.yandex.ru/watch/45389973" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
-<!-- /Yandex.Metrika counter -->
+      })(document, window, "yandex_metrika_callbacks");
+    </script>
+    <noscript>
+      <div>
+        <img alt="" src="https://mc.yandex.ru/watch/45389973" style="position:absolute; left:-9999px;">
+      </div>
+    </noscript>
+    <!-- /Yandex.Metrika counter -->
     <div id="headr_index"></div>
     <main>
-        <!--Основная секция-->
-        <section class="basis">
-            <!--Блок слева (типа боковая панель)-->
-            <aside class="hidden-sm hidden-xs">
-                <!--Сколько тут котеек+картинка+кнопка-->
-                <section class="vote">
-                    <img class="vote_img" alt="Пес, лев и крольчиха" src="./Images/9988.jpg">
-                    <p class="vote_question">Сколько тут котеек?</p>
-                    <form class="vote_form" name="answer">
-                        <input id="answ" class="but" style="width:30%;" type="number" name="cm">
-                        <input type="submit" class="but" value="Проверить">
-                    </form>
-                </section>
-                <!--Информация-->
-                <p class="sorry">
-                    Тут куча всяких примочек (возможно, ненужных) только для того, чтоб я научилась их юзать, если что)
-                </p>
-                <!--Реклама-->
-                <input class="reklama_but" id="reklama_but" value="Нажми меня, тут котик, честно" onclick="rekl()" type="button">
-                <div class="reklama" id="reklama">
-                    <h2 class="reklama_title">Самый лучший паблик c артами:</h2>
-                    <a class="reklama_link" href="https://vk.com/art_nysha">
-                        <h2>Кликни сюда и подпишись<br> во славу котикам!</h2>
-                    </a>
-                    <h3 class="reklama_annotation">Это реклама, смирись</h3>
+      <!--Основная секция-->
+      <div class="container-fluid basis">
+        <div class="row">
+          <!--Блок слева (типа боковая панель)-->
+          <aside class="col-lg-4">
+            <!--Сколько тут котеек+картинка+кнопка-->
+            <section class="vote">
+              <img alt="Пес, лев и крольчиха" class="vote_img" src="./Images/9988.jpg">
+              <div class="flex2">
+                <p class="vote_question">Сколько тут котеек?</p>
+                <div class="input-append vote_form">
+                  <input class="but" id="answ" size="16" style="margin:0" type="text">
+                  <button class="btn but" style="margin:0" type="button">Проверить</button>
                 </div>
-                <!--Навигация по странице-->
-                <div style="margin-left:0; margin-top:5%; margin-bottom:5%"><a id="nachalo_but" style="font-size:145%;" class="but" href="#headr_index">В начало</a></div>
-                <!--Цель-->
-                <iframe src="https://smartprogress.do/goal/embed/275030/?user_id=261987" frameborder="0" width="100%" height="150"></iframe>
-            </aside>
-            <!--Блок справа-->
-            <div class="main_section">
-                <!--Текст про котиков-->
-                <section class="txt">
-                    <h3 class="txt_title">Знаешь, кто я?</h3>
-                    <article class="txt_text">
-                        <p>Spanri, люблю рисовать и есть мандарины, привет.</p>
-                        <img id="cat" src="./Images/одж.jpg" alt="Необычный кот(рисунок)" title="Нажми на меня" class="txt_img">
-                        <p>В 2011 году я нашла <a href="https://multator.ru">этот сайт</a> и задержалась на нем аж 2 года! Я
-                            постоянно рисовала там, точнее анимировала и уже спустя месяц думала, что я крутой профессиональный
-                            художник. К слову, я ни разу тогда не работала в графическом редакторе лучше paint, да и анимации
-                            у меня были мягко говоря не очень... А еще у меня был планшет genius. Не берите genius.
-                        </p>
-                        <p>И вот, однажды, на multator пришла крутая художница, нарисовала анимацию и оставила ссылку на свою
-                            группу вк. Это была Коул. После этого мне стало интересно, действительно ли вк есть еще художники
-                            со своими группами. И их оказалось море! Я скачала paint tool sai и принялась творить. И до сих
-                            пор творю.
-                        </p>
-                        <p>
-                            Последнее время мне нравится осваивать новые программы. Я немного освоилась в adobe illustrator и adobe photoshop. Еще собираюсь
-                            скачать sketch и уже скачала corel painter...
-                        </p>
-                        <p>
-                            Творец, помни: если тебе кажется, что у тебя ничего так вышло, это в 98% случаев не так!!!! Хотя у меня есть пара работ,
-                            которые мне нравятся до сих пор. В основном, это те работы, которые я рисовала очень долго. Или
-                            вдохновение было. Оно оооочень важно! У меня это музыка и чужие арты. Когда я просматриваю группы
-                            артеров, у меня начинают чесаться руки и я хочу творить! Нормально ли это? Надеюсь, да...
-                        </p>
-                        <p>Имя: Козлова Анна Сергеевна <br>Кличка: Спанри <br>Дата рождения: 02,12,1997(16 лет) <br>Знак: Стрелец
-                            <br>Любимый цвет на данный момент: нежно салатовый <br>Многие думают, что я сумасшедшая. А я
-                            просто думаю, что коты клевые, а также о смысле жизни. Да, у меня часто возникают неожиданные
-                            неприличные мысли, но это же только мысли. Если ты хочешь со мной подружиться, то ты должен быть
-                            художником, не против манги и аниме, быть простым или сложным(XD)... Ну и не быть долбое*ом.
-                            <br>Я люблю спать. Очень. Но вечно не высыпаюсь. Я не понимаю анархистов. Кому я доверяю? Животным.
-                            Мечтаю о том, что бы жизнь стала легкой. И чтобы пропала из школы физика. И о хорошем зрении.
-                            Воспоминания? О том, как я раскрыла совй секрет детства. Брату. Как устраивала с друзьями бои
-                            на траве(даже не спрашивайте) и то, как строила с ними же крутой домик. <br>Меня раздражает лицемерство,
-                            возвышение себя над другими, даже самое маленькое. Бесит тупизм, момент, когда при разговоре
-                            тебя перебивают или вообще не слышат. Я каждый день: читаю мангу, слушаю музыку, играю в планш,
-                            учусь, воображаю на всякие темы, думаю о котиках, смысле жизни.</p>
-                    </article>
-                </section>
+              </div>
+            </section>
+            <!--Информация-->
+            <p class="sorry">Тут куча всяких примочек (возможно, ненужных) только для того, чтоб я научилась их юзать, если что)</p>
+            <!--Реклама-->
+            <input class="reklama_but" id="reklama_but" onclick="rekl()" type="button" value="Нажми меня, тут котик, честно">
+            <div class="reklama" id="reklama">
+              <h2 class="reklama_title">Самый лучший паблик c артами:</h2>
+              <div>
+                <a class="reklama_link" href="https://vk.com/art_nysha">
+                  <h2>Кликни сюда и подпишись<br> во славу котикам!</h2>
+                </a>
+              </div>
+              <h3>class="reklama_annotation" Это реклама, смирись</h3>
             </div>
-            <div class="empty"></div>
-        </section>
+            <!--Навигация по странице-->
+            <div>
+              <a class="but" href="#headr_index" id="nachalo_but" style="margin-left:0;font-size:145%;margin-top:5%;">В начало</a>
+            </div>
+          </aside>
+          <!--Блок справа-->
+          <div class="col-lg-8 main_section">
+            <!--Текст про котиков-->
+            <section class="txt">
+              <h3 class="txt_title">Знаешь, кто я?</h3>
+              <article class="txt_text">
+                <p>Spanri, люблю рисовать и есть мандарины, привет.</p>
+                <img alt="Необычный кот(рисунок)" class="txt_img" id="cat" src="./Images/одж.jpg" title="Нажми на меня">
+                <p>В 2011 году я нашла <a href="https://multator.ru">этот сайт</a> и задержалась на нем аж 2 года! Я постоянно рисовала там, точнее анимировала и уже спустя месяц думала, что я крутой профессиональный художник. К слову, я ни разу тогда не работала в графическом редакторе лучше paint, да и анимации у меня были мягко говоря не очень... А еще у меня был планшет genius. Не берите genius.</p>
+                <p>И вот, однажды, на multator пришла крутая художница, нарисовала анимацию и оставила ссылку на свою группу вк. Это была Коул. После этого мне стало интересно, действительно ли вк есть еще художники со своими группами. И их оказалось море! Я скачала paint tool sai и принялась творить. И до сих пор творю.</p>
+                <p>Последнее время мне нравится осваивать новые программы. Я немного освоилась в adobe illustrator и adobe photoshop. Еще собираюсь скачать sketch и уже скачала corel painter...</p>
+                <p>Творец, помни: если тебе кажется, что у тебя ничего так вышло, это в 98% случаев не так!!!! Хотя у меня есть пара работ, которые мне нравятся до сих пор. В основном, это те работы, которые я рисовала очень долго. Или вдохновение было. Оно оооочень важно! У меня это музыка и чужие арты. Когда я просматриваю группы артеров, у меня начинают чесаться руки и я хочу творить! Нормально ли это? Надеюсь, да...</p>
+                <p>Имя: Козлова Анна Сергеевна <br>Кличка: Спанри <br>Дата рождения: 02,12,1997(16 лет) <br>Знак: Стрелец <br>Любимый цвет на данный момент: нежно салатовый <br>Многие думают, что я сумасшедшая. А я просто думаю, что коты клевые, а также о смысле жизни. Да, у меня часто возникают неожиданные неприличные мысли, но это же только мысли. Если ты хочешь со мной подружиться, то ты должен быть художником, не против манги и аниме, быть простым или сложным(XD)... Ну и не быть долбое*ом. <br>Я люблю спать. Очень. Но вечно не высыпаюсь. Я не понимаю анархистов. Кому я доверяю? Животным. Мечтаю о том, что бы жизнь стала легкой. И чтобы пропала из школы физика. И о хорошем зрении. Воспоминания? О том, как я раскрыла совй секрет детства. Брату. Как устраивала с друзьями бои на траве(даже не спрашивайте) и то, как строила с ними же крутой домик. <br>Меня раздражает лицемерство, возвышение себя над другими, даже самое маленькое. Бесит тупизм, момент, когда при разговоре тебя перебивают или вообще не слышат. Я каждый день: читаю мангу, слушаю музыку, играю в планш, учусь, воображаю на всякие темы, думаю о котиках, смысле жизни.</p></p>
+              </article>
+            </section>
+          </div>
+        </div>
+      </div>
+      <div class="empty"></div>
     </main>
     <!--Подвал сайта-->
     <div id="footer"></div>
-</body>
-
-</html>
+  </body></html>
