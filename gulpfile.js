@@ -10,3 +10,7 @@ gulp.task('haml', function () {
     .pipe(haml())
     .pipe(gulp.dest('www2'));
 })
+
+gulp.task('watch', function () {
+    gulp.watch('haml/*.haml',['haml']);
+})

@@ -1,3 +1,7 @@
+.container{
+    max-width: 100%;
+}
+
 header {
             width: 100%;
             /*background: linear-gradient(0deg,#FCA8CA,#304D9E);*/
