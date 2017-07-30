@@ -1,8 +1,11 @@
 
 #headr_index
-    %div(class="navbar navbar-default navbar-fixed-top" role="navigation")
-      .container-fluid
-        %div(class="navbar-collapse collapse")
+    %div(class="navbar navbar-default navbar-fixed-top" role="navigation" style="color:white")
+        .navbar-header
+            %button(type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-main")
+                %span(class="glyphicon glyphicon-tree-conifer")
+      .container-fluid(style="padding-right:0;padding-left:0;")
+        %div(class="navbar-collapse collapse" style="background:rgba(255, 198, 198, 1)")
             %nav
                 %ul(class="nav navbar-nav" style="-webkit-padding-start: 0")
                     %li.menu
@@ -19,20 +22,21 @@
                         <a href="#contact">Лучшее</a>
                     %li.menu
                         <a href="#contact">Где я есть</a>
-    .container-fluid
     
-    %header.flex
-        %div(style="margin-left:1%;")
-            .chCol(style="width:100%;")
-                %button.but.changeCol(onclick="changeCol('blue')") Синий
-                %button.but.changeCol(onclick="changeCol('notBlue')") Белый
-            %h2#cat.title Spanri
-            %h3#result(style="color:white;display:none;") Диджитал и традишнл <br>художник, анималист, <br>портретист
-        %img.hidden-xs.header_img(src="./img/forest.png" style="margin-left:1%; margin-right:1%; padding-top:1%;")
-        .hidden-sm(style="margin-left:1%;")
-        %h3.slogan(title="но не бешеных")
-            %i Время гладить котят!
-        %p#date.date
+    .container-fluid.header(style="padding-top:60px;")
+        .row
+            .col-lg-3.col-xs-6
+                .row.chCol
+                    %button.col-lg-3.but.changeCol(onclick="changeCol('blue')") Синий
+                    %button.col-lg-3.but.changeCol(onclick="changeCol('notBlue')") Белый
+                %h2#cat.title Spanri
+                %h3#result(style="color:white;display:none;") Диджитал и традишнл <br>художник, анималист, <br>портретист
+            .col-lg-5.hidden-xs
+                %img(src="./img/forest.png")
+            .col-lg-4.col-xs-6
+                 %h3.slogan(title="но не бешеных")
+                    %i Время гладить котят!
+                %p#date.date
 
 #headr_osnova
     %div

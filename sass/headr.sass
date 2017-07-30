@@ -10,15 +10,18 @@ nav
     text-align: center
 .menu
     background-color: $pink
-    margin-bottom: 0
-    margin-top: 0
+    width: 14%
+    margin:
+        bottom: 0
+        top: 0
     white-space: nowrap
-    color: white
-    font-size: 142%
+    font:
+        size: 120%
+        family: fantasy
     overflow: hidden
-    font-family: fantasy
-    text-align: center
-    text-overflow: ellipsis
+    text:
+        align: center
+        overflow: ellipsis
     width: 14%
     border: 0
     padding: 0.1%
@@ -28,28 +31,36 @@ nav
     & a
         text-align: center
         margin: 0
+        color: white
 .slogan,.menu,.date,header
     display: inline-block
     margin: 0
-header
+.header
     background-color: rgba(111, 169, 120, 0.7)
     width: 100%
-    margin-top: 0px
-    margin-bottom: 1%
+    margin:
+        top: 0px
+        bottom: 1%
     position: relative
     .changeCol
         padding: 0
-        display: inline-block
-        width: 45%
         background-color: rgba(0, 0, 0, 0)
         &:hover
             background-color: rgba(49, 124, 101, 0.7)    
     .title
+        -webkit-margin-before: 0
+        -webkit-margin-after: 0
         font-size: 450%
-        margin-left: 3%
-        margin-top: 0%
-        margin-bottom: 5%
+        margin:
+            left: 0
+            top: 0%
+            bottom: 0
         color: white
+    &_img
+        margin:
+            left: 1%
+            right: 1%
+            top: 1%
     .slogan
         font-size: 28px
         -webkit-text-stroke: 0.5px
