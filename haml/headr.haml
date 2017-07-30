@@ -1,0 +1,65 @@
+
+#headr_index
+    %div(class="navbar navbar-default navbar-fixed-top" role="navigation")
+      .container-fluid
+        %div(class="navbar-collapse collapse")
+            %nav
+                %ul(class="nav navbar-nav" style="-webkit-padding-start: 0")
+                    %li.menu
+                        <a href="#">Главная</a>
+                    %li.menu
+                        <a href="#about">Мои сайты</a>
+                    %li.menu
+                        <a href="#contact">Код js</a>
+                    %li.menu
+                        <a href="#">Комменты</a>
+                    %li.menu
+                        <a href="#about">Заказ арта</a>
+                    %li.menu
+                        <a href="#contact">Лучшее</a>
+                    %li.menu
+                        <a href="#contact">Где я есть</a>
+    .container-fluid
+    
+    %header.flex
+        %div(style="margin-left:1%;")
+            .chCol(style="width:100%;")
+                %button.but.changeCol(onclick="changeCol('blue')") Синий
+                %button.but.changeCol(onclick="changeCol('notBlue')") Белый
+            %h2#cat.title Spanri
+            %h3#result(style="color:white;display:none;") Диджитал и традишнл <br>художник, анималист, <br>портретист
+        %img.hidden-xs.header_img(src="./img/forest.png" style="margin-left:1%; margin-right:1%; padding-top:1%;")
+        .hidden-sm(style="margin-left:1%;")
+        %h3.slogan(title="но не бешеных")
+            %i Время гладить котят!
+        %p#date.date
+
+#headr_osnova
+    %div
+        %nav.flex
+        .menu
+            %a(href="../index.html") Главная
+        .menu
+            %a(href="../404.html") Мои сайты
+        .menu
+            %a(href="code_js.html") Код js
+        .menu
+            %a(href="comment.html") Комменты
+        .menu
+            %a(href="../404.html") Заказ арта
+        .menu
+            %a(href="../404.html") Лучшее
+        .menu
+            %a(href="my_art.html") Где я есть
+    %header.flex
+        %div(style="margin-left:1%;")
+            .chCol(style="width:100%;")
+                %button.but.changeCol(onclick="changeCol('blue')") Синий
+                %button.but.changeCol(onclick="changeCol('notBlue')") Белый
+            %h2#cat.title Spanri
+            %h3#result(style="color:white;display:none;") Диджитал и традишнл <br>художник, анималист, <br>портретист
+        %img.hidden-xs.header_img(src="./img/forest.png" style="margin-left:1%; margin-right:1%; padding-top:1%;")
+        .hidden-sm(style="margin-left:1%;")
+        %h3.slogan(title="но не бешеных")
+            %i Время гладить котят!
+        %p#date.date

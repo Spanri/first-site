@@ -33,82 +33,11 @@ body{
     background-repeat: repeat;
     overflow-y: auto;
 }
-aside{
-    /*width:30%;
-    margin:1%;
-    margin-top:0;
-    margin-left: 0;*/
-}
 .empty{
     height: 120px;
     clear: both;
 }
-/*Навигация*/
-nav{
-    position:fixed;
-    top:0;
-    width:1200px;
-    margin:0;
-    padding:0;
-    z-index:100;
-    background:rgba(255, 198, 198, 1);
-    text-align:center;
-}
-.menu{
-    background-color: rgba(255, 198, 198, 1);
-    white-space: nowrap;
-    color: white;
-    font-size: 142%;
-    overflow: hidden;
-    font-family: fantasy;
-    text-overflow: ellipsis;
-    width: 14%;
-    border: 0;
-    padding: 0.1%;
-}
-    .menu:hover{
-        background-color: rgba(250, 88, 88, 0.7);
-        border-color: #FA5858;
-    }
-/*Шапка*/
-.slogan,.menu,.date,header{
-    display: inline-block;
-    margin: 0;
-}
-header{
-    background-color: rgba(111, 169, 120, 0.7);
-    width: 100%;
-    margin-top: 30px;
-    margin-bottom: 1%;
-    position:relative;
-}
-    .changeCol{
-        padding:0;
-        display:inline-block;
-        width:45%;
-        background-color: rgba(0, 0, 0, 0);
-    }
-        .changeCol:hover{
-            background-color: rgba(49, 124, 101, 0.7);
-        }
-    .title{
-        font-size:450%;
-        margin-left: 3%;
-        margin-top:0%;
-        margin-bottom: 5%;
-        color: white;
-    }
-    .slogan{
-        font-size:28px;
-        -webkit-text-stroke:0.5px;
-        color: whitesmoke;
-        font:italic;
-    }
-    .date{
-        margin-left:0%;
-        color:whitesmoke;
-        font-size:50px;
-    }
+
 /*Основная часть*/
 .basis{
     max-width:1200px;
