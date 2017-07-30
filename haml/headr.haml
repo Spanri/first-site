@@ -1,46 +1,29 @@
 
 #headr_index
     %div(class="navbar navbar-fixed-top" role="navigation" style="background-color: rgba(255, 198, 198, 1)")
-      .container-fluid(style="padding-right:0;padding-left:0;max-width:1200px;margin:auto;")
-        .navbar-header(style="background:rgba(255, 198, 198, 1);")
-            %button(type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-main" aria-expanded="false")
+      .container-fluid.dropup(style="padding-right:0;padding-left:0;max-width:1200px;margin:auto;")
+        .navbar-header.dropup(style="background:rgba(255, 198, 198, 1);")
+            %button(type="button" class="navbar-toggle collapsed" data-target="#qwerty" data-toggle="collapse" aria-expanded="false")
                 %span(class="glyphicon glyphicon-tree-conifer")
-        %div(class="collapse navbar-collapse" id="navbar-main" style="margin-left:0;")
+        %div(class="collapse navbar-collapse" id="qwerty" style="margin-left:0;")
             %ul(class="nav navbar-nav")
                 %li.menu
                     %a(href="index.html")Главная
                 %li.menu
-                    <a href="404.html">Мои сайты</a>
+                    %a(href="404.html") Мои сайты
                 %li.menu
-                    <a href="./Osnova/code_js.html">Код js</a>
+                    %a(href="./Osnova/code_js.html") Код js
                 %li.menu
-                    <a href="./Osnova/comment.html">Комменты</a>
+                    %a(href="./Osnova/comment.html") Комменты
                 %li.menu
                     %a(href="404.html") Заказ арта
                 %li.menu
-                    <a href="404.html">Лучшее</a>
+                    %a(href="404.html") Лучшее
                 %li.menu
-                    <a href="./Osnova/my_art.html">Где я есть</a>
-
-                %li.dropdown
-                    %ul.dropdown-menu
-                        %li.menu.active
-                            <a href="index.html">Главная</a>
-                        %li.menu
-                            <a href="404.html">Мои сайты</a>
-                        %li.menu
-                            <a href="./Osnova/code_js.html">Код js</a>
-                        %li.menu
-                            <a href="./Osnova/comment.html">Комменты</a>
-                        %li.menu
-                            <a href="404.html">Заказ арта</a>
-                        %li.menu
-                            <a href="404.html">Лучшее</a>
-                        %li.menu
-                                <a href="./Osnova/my_art.html">Где я есть</a>
+                    %a(href="./Osnova/my_art.html") Где я есть
     .container-fluid.header(style="padding-top:60px;")
         .row
-            .col-lg-3.col-xs-6
+            .col-lg-3.col-xs-12
                 .row.chCol
                     %button.col-lg-3.but.changeCol(onclick="changeCol('blue')") Синий
                     %button.col-lg-3.but.changeCol(onclick="changeCol('notBlue')") Белый
@@ -48,7 +31,7 @@
                 %h3#result(style="color:white;display:none;") Диджитал и традишнл <br>художник, анималист, <br>портретист
             .col-lg-5.hidden-xs
                 %img(src="./img/forest.png")
-            .col-lg-4.col-xs-6
+            .col-lg-4.hidden-xs
                  %h3.slogan(title="но не бешеных")
                     %i Время гладить котят!
                 %p#date.date
@@ -62,19 +45,19 @@
         %div(class="collapse navbar-collapse" id="navbar-main" style="margin-left:0;")
             %ul(class="nav navbar-nav")
                 %li.menu
-                    %a(href="index.html")Главная
+                    %a(href="../index.html")Главная
                 %li.menu
-                    <a href="404.html">Мои сайты</a>
+                    <a href="../404.html">Мои сайты</a>
                 %li.menu
-                    <a href="./Osnova/code_js.html">Код js</a>
+                    <a href="code_js.html">Код js</a>
                 %li.menu
-                    <a href="./Osnova/comment.html">Комменты</a>
+                    <a href="comment.html">Комменты</a>
                 %li.menu
-                    %a(href="404.html") Заказ арта
+                    %a(href="../404.html") Заказ арта
                 %li.menu
-                    <a href="404.html">Лучшее</a>
+                    <a href="../404.html">Лучшее</a>
                 %li.menu
-                    <a href="./Osnova/my_art.html">Где я есть</a>
+                    <a href="my_art.html">Где я есть</a>
 
                 %li.dropdown
                     %ul.dropdown-menu
@@ -94,15 +77,15 @@
                                 <a href="./Osnova/my_art.html">Где я есть</a>
     .container-fluid.header(style="padding-top:60px;")
         .row
-            .col-lg-3.col-xs-6
+            .col-lg-3.col-xs-12
                 .row.chCol
                     %button.col-lg-3.but.changeCol(onclick="changeCol('blue')") Синий
                     %button.col-lg-3.but.changeCol(onclick="changeCol('notBlue')") Белый
                 %h2#cat.title Spanri
                 %h3#result(style="color:white;display:none;") Диджитал и традишнл <br>художник, анималист, <br>портретист
-            .col-lg-5.hidden-xs
+            .col-lg-4.hidden-xs
                 %img(src="../img/forest.png")
-            .col-lg-4.col-xs-6
+            .col-lg-5.hidden-xs
                  %h3.slogan(title="но не бешеных")
                     %i Время гладить котят!
                 %p#date.date
