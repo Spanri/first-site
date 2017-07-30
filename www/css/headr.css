@@ -1,11 +1,21 @@
+.navbar-nav {
+  float: none; }
+
 ul {
   -webkit-margin-before: 0;
   -webkit-margin-after: 0; }
 
-nav {
+.navbar {
+  border: 0; }
+
+.nav {
   z-index: 100;
   background: #ffc6c6;
   text-align: center; }
+
+.nav li a:hover, .nav li a:focus {
+  background-color: #FA5858;
+  border-color: #FA5858; }
 
 .menu {
   background-color: #ffc6c6;
@@ -23,12 +33,15 @@ nav {
   border: 0;
   padding: 0.1%; }
   .menu:hover {
-    background-color: rgba(250, 88, 88, 0.7);
+    background-color: #FA5858;
     border-color: #FA5858; }
   .menu a {
     text-align: center;
     margin: 0;
     color: white; }
+    .menu a:hover {
+      background-color: #FA5858;
+      border-color: #FA5858; }
 
 .slogan, .menu, .date, header {
   display: inline-block;

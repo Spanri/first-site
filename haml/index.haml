@@ -11,9 +11,10 @@
     %script(type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js")
     %link(rel="stylesheet" href="./css/bootstrap.css")
     %link(rel="stylesheet" href="./css/bootstrap-theme.css")
+    %link(rel="stylesheet" href="./css/ForAll.css")
     %link(rel="stylesheet" href="./css/style.css")
     %link(rel="stylesheet" href="./css/headr.css")
-    %link(rel="stylesheet" href="./css/ForAll.css")
+    
     %link(rel="shortcut icon" href="./Icons/cat2.ico" type="image/x-icon")
     %script(src="./js/bootstrap.js")
     %script(src="./js/index.js")
@@ -54,7 +55,7 @@
       .container-fluid.basis
         .row
           <!--Блок слева (типа боковая панель)-->
-          %aside(class="col-lg-4")
+          %aside(class="col-lg-4" style="padding-right:0px;padding-left:0px;")
             <!--Сколько тут котеек+картинка+кнопка-->
             %section.vote
               %img.vote_img(alt="Пес, лев и крольчиха" src="./img/9988.jpg")
@@ -77,7 +78,7 @@
             %div
               %a#nachalo_but.but(style="margin-left:0;font-size:145%;margin-top:5%;" href="#headr_index") В начало
           <!--Блок справа-->
-          .main_section(class="col-lg-8")
+          .main_section(class="col-lg-8" style="padding-right:0px;")
             <!--Текст про котиков-->
             %section.txt
               %h3.txt_title Знаешь, кто я?

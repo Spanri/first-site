@@ -1,4 +1,8 @@
 
+row{
+    padding-right: 0px;
+    padding-left: 0px;
+}
 .txt,.reklama{
     display:inline-block;
 }
@@ -36,9 +40,6 @@
         margin-bottom: 1%;
     }
 
-.main_section{
-    /*min-height: 200px;*/
-}
 
 .txt{
     /*min-height: 200px;
@@ -62,7 +63,7 @@
     }
     .txt_text{
         margin:2%;
-        color:black;
+        color:white;
         font-size:120%;
     }
 
@@ -109,11 +110,4 @@
     margin-top: 1%;
     margin-bottom: 1%;
     color:white;
-}
-
-.flex2{
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
-    align-items: stretch;
 }
