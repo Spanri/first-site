@@ -1,10 +1,6 @@
 .navbar-nav {
   float: none; }
 
-ul {
-  -webkit-margin-before: 0;
-  -webkit-margin-after: 0; }
-
 .navbar {
   border: 0; }
 
@@ -19,24 +15,22 @@ ul {
 
 .menu {
   background-color: #ffc6c6;
-  width: 14%;
-  margin-bottom: 0;
-  margin-top: 0;
   white-space: nowrap;
   font-size: 120%;
   font-family: fantasy;
-  overflow: hidden;
   text-align: center;
   -o-text-overflow: ellipsis;
      text-overflow: ellipsis;
-  width: 14%;
   border: 0;
   padding: 0.1%; }
   .menu:hover {
     background-color: #FA5858;
     border-color: #FA5858; }
   .menu a {
+    width: 100%;
     text-align: center;
+    text-align: right;
+    font-size: 25px;
     margin: 0;
     color: white; }
     .menu a:hover {
