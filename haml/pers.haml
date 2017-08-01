@@ -15,7 +15,7 @@
         %link(rel="shortcut icon" href="../Icons/cat2.ico" type="image/x-icon")
         <!-- Оно не робиииит (((( -->
         <script type="text/javascript">
-            $(".header_rioto").click(function () {
+            $("#header_rioto").click(function () {
                 $("html, body").animate({
                     scrollTop: $($(this).attr("href")).offset().top + "px"
                 }, {
@@ -24,9 +24,8 @@
                     });
                 return false;
             });
-            function openNewTab() {
-                window.open("http://vk.com/art_nysha");
-            }
+
+});
         </script>
 
     %body
@@ -38,15 +37,15 @@
                             %span(class="glyphicon glyphicon-tree-conifer" style="color:white;font-size:23px")
                         .navbar-brand.visible-xs Spanri
                     %div(class="collapse navbar-collapse" id="qwerty" style="padding:0;")
-                        %ul(class="nav navbar-nav" style="margin:0")
+                        %ul(class="nav navbar-nav pull-right" style="margin:0")
                             %li.menu
-                                %a(href="index.html") Сайт автора персонажей
+                                %a(href="../index.html") Сайт автора персонажей
                             %li.menu
-                                %a(href="http://vk.com/art_nysha") Группа вк автора персонажей
+                                %a(href="http://vk.com/art_nysha" style="padding-left:1px") Группа вк автора персонажей
             .header_block.container-fluid
                 .row
                     .col-lg-3.col-md-3.col-sm-3.hidden-xs
-                        %a(href="#rioto")
+                        %a#header_rioto(href="#rioto")
                             %img.img(title="Риото" src="риото.png")
                     .col-lg-3.col-md-3.col-sm-3.hidden-xs
                         %a(href="#aeli")
@@ -73,7 +72,7 @@
         .container-fluid.main(style="margin:auto;text-align:center;z-index:1")
             .row
                 .col-lg-6.col-md-6
-                    %img.img(src="риотка.jpg")
+                    %img#rioto.img(src="риотка.jpg")
                 .col-lg-6.block.col-md-6
                     %p  Риото
                     %p  Самый продуманный персонаж. Придуман в 2014 году. 
@@ -84,7 +83,7 @@
                         предпочитает интуицию. В прошлом дракон, не имеющий любви у родителей и потому сбежавший в мир людей.
             .row
                 .col-lg-6.col-md-6
-                    %img.img(src="467.jpg" style="width:100%")
+                    %img#candy.img(src="467.jpg" style="width:100%")
                 .col-lg-6.block.col-md-6
                     %p Кенди
                     %p% Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus quia animi, tempore accusantium culpa. Repellat placeat eos pariatur corrupti officia natus odit hic quaerat, excepturi voluptas. Dolores nesciunt, consectetur unde.
@@ -94,7 +93,7 @@
                     %p% Eos, dignissimos. Laborum, earum, repudiandae. In sed deserunt nisi, at fugit eum fugiat eaque distinctio repudiandae et dicta accusamus adipisci culpa, laboriosam aspernatur ab tenetur, nam odio numquam nulla asperiores.
             .row
                 .col-lg-6.col-md-6
-                    %img.img(src="467.jpg" style="width:100%")
+                    %img#tim.img(src="467.jpg" style="width:100%")
                 .col-lg-6.block.col-md-6
                     %p Тим
                     %p% Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam quo sit ratione adipisci magnam repudiandae exercitationem aspernatur animi dicta nesciunt similique alias cumque officiis quod eaque harum illo, rem voluptatem!
@@ -104,7 +103,7 @@
                     %p% Dignissimos facilis fugiat consectetur error nobis quia, consequatur, iste sit similique reprehenderit repellat soluta laborum eveniet nemo reiciendis dolores in consequuntur obcaecati voluptates temporibus. Possimus, et rerum nobis exercitationem quam!
             .row
                 .col-lg-6.col-md-6
-                    %img.img(src="467.jpg" style="width:100%")
+                    %img#richard.img(src="467.jpg" style="width:100%")
                 .col-lg-6.block.col-md-6
                     %p Ричард
                     %p% Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos praesentium, in facilis, exercitationem, itaque totam obcaecati aperiam hic odio error nihil nesciunt. Omnis maiores, veniam recusandae quo illum culpa quae.
@@ -114,7 +113,7 @@
                     %p% Odio delectus omnis reprehenderit quisquam dicta et vitae ea ex, nulla ab sint, doloribus optio. Labore id veniam, recusandae, numquam quia doloribus nemo ducimus aut eligendi vitae placeat ea tempore!
             .row
                 .col-lg-6.col-md-6
-                    %img.img(src="467.jpg" style="width:100%")
+                    %img#vadim.img(src="467.jpg" style="width:100%")
                 .col-lg-6.block.col-md-6
                     %p Вадим
                     %p% Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi cupiditate dolores ipsam, eos tenetur optio animi, adipisci enim atque fugit facilis nulla minima assumenda repudiandae aperiam delectus eligendi quibusdam nobis!
@@ -125,7 +124,7 @@
                     % Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati consequatur minima possimus omnis et optio maiores, reprehenderit quibusdam adipisci distinctio harum quidem aperiam quisquam, porro unde nam ipsa recusandae sapiente!
             .row
                 .col-lg-6.col-md-6
-                    %img.img(src="467.jpg" style="width:100%")
+                    %img#aeli.img(src="467.jpg" style="width:100%")
                 .col-lg-6.block.col-md-6
                     %p Аэли
                     %p% Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo quae voluptate ipsum, quibusdam ea error similique, ducimus illum cumque neque, saepe consequuntur nulla, quo distinctio nihil! Harum temporibus recusandae nobis.
