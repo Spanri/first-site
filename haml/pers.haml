@@ -13,6 +13,7 @@
         %script(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js")
         %link(rel="stylesheet" href="pers.css")
         %link(rel="shortcut icon" href="../Icons/cat2.ico" type="image/x-icon")
+        %meta(name="theme-color" content="rgba(0, 117, 129, 0.5)")
         <!-- Оно не робиииит (((( -->
         <script type="text/javascript">
             $("#header_rioto").click(function () {
@@ -24,8 +25,6 @@
                     });
                 return false;
             });
-
-});
         </script>
 
     %body
@@ -33,7 +32,7 @@
             %div(class="navbar navbar-justified" role="navigation")
                 .container-fluid.dropup(style="padding-right:0;padding-left:0;max-width:1200px;margin:auto;")
                     .navbar-header.dropup
-                        %button(type="button" class="navbar-toggle collapsed" data-target="#qwerty" data-toggle="collapse" aria-expanded="false")
+                        %button(type="button" class="navbar-toggle collapsed" style="margin-right:0" data-target="#qwerty" data-toggle="collapse" aria-expanded="false")
                             %span(class="glyphicon glyphicon-tree-conifer" style="color:white;font-size:23px")
                         .navbar-brand.visible-xs Spanri
                     %div(class="collapse navbar-collapse" id="qwerty" style="padding:0;")

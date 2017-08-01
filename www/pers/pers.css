@@ -12,6 +12,8 @@ header {
     color: white;
     font-size: 20px; }
     header .menu a:hover {
+      -webkit-border-radius: 10%;
+              border-radius: 10%;
       -webkit-transition-property: background-color;
       -o-transition-property: background-color;
       transition-property: background-color;
