@@ -9,9 +9,13 @@ var cache = require('gulp-cache');
 var autoprefixer = require('gulp-autoprefixer');// Подключаем библиотеку для автоматического добавления префиксов
 
 gulp.task('haml', function () {
-    gulp.src(['haml/*.haml', '!haml/headr.haml'])
+    gulp.src(['haml/*.haml', '!haml/headr.haml', '!haml/pers.haml'])
         .pipe(haml())
         .pipe(gulp.dest('www'))
+        .pipe(browserSync.reload({ stream: true }));
+    gulp.src(['haml/pers.haml'])
+        .pipe(haml())
+        .pipe(gulp.dest('www/pers'))
         .pipe(browserSync.reload({ stream: true }));
     return gulp.src(['haml/headr.haml'])
         .pipe(haml())
@@ -19,12 +23,17 @@ gulp.task('haml', function () {
         .pipe(browserSync.reload({ stream: true }))
 })
 
-gulp.task('sass', function(){ // Создаем таск Sass
-    return gulp.src('sass/*.sass') // Берем источник
-        .pipe(sass()) // Преобразуем Sass в CSS посредством gulp-sass
-        .pipe(autoprefixer(['last 15 versions', '> 1%', 'ie 8', 'ie 7'], { cascade: true })) // Создаем префиксы
-        .pipe(gulp.dest('www/css')) // Выгружаем результата в папку app/css
-        .pipe(browserSync.reload({stream: true})) // Обновляем CSS на странице при изменении
+gulp.task('sass', function(){
+    gulp.src(['sass/*.sass', '!sass/pers.sass'])
+        .pipe(sass())
+        .pipe(autoprefixer(['last 15 versions', '> 1%', 'ie 8', 'ie 7'], { cascade: true }))
+        .pipe(gulp.dest('www/css'))
+        .pipe(browserSync.reload({stream: true}));
+    return gulp.src('sass/pers.sass')
+        .pipe(sass())
+        .pipe(autoprefixer(['last 15 versions', '> 1%', 'ie 8', 'ie 7'], { cascade: true }))
+        .pipe(gulp.dest('www/pers'))
+        .pipe(browserSync.reload({stream: true}))
 });
 
 gulp.task('browser-sync', function() {
