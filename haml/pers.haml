@@ -29,19 +29,21 @@
 
     %body
         %header
-            %div(class="navbar navbar-justified" role="navigation")
-                .container-fluid.dropup(style="padding-right:0;padding-left:0;max-width:1200px;margin:auto;")
-                    .navbar-header.dropup
-                        %button(type="button" class="navbar-toggle collapsed" style="margin-right:0" data-target="#qwerty" data-toggle="collapse" aria-expanded="false")
-                            %span(class="glyphicon glyphicon-tree-conifer" style="color:white;font-size:23px")
-                        .navbar-brand.visible-xs Spanri
-                    %div(class="collapse navbar-collapse" id="qwerty" style="padding:0;")
-                        %ul(class="nav navbar-nav pull-right" style="margin:0")
+            .navbar(role="navigation")
+                .container-fluid(style="max-width:1200px;margin:auto;")
+                    .navbar-header(style="border:0")
+                        %button(type="button" class="navbar-toggle collapsed" data-target="#qwerty" data-toggle="collapse" aria-expanded="false")
+                            -# %span(class="glyphicon glyphicon-tree-conifer")
+                            %img(src="equal.svg" style="width:30px;color:white")
+                        .navbar-brand Spanri 
+                            %p &nbsp Персонажи
+                    %div(class="collapse navbar-collapse" id="qwerty" style="padding:0;border:0")
+                        %ul(class="nav navbar-nav navbar-right" style="margin:0")
                             %li.menu
                                 %a(href="../index.html") Сайт автора персонажей
                             %li.menu
-                                %a(href="http://vk.com/art_nysha" style="padding-left:1px") Группа вк автора персонажей
-            .header_block.container-fluid
+                                %a(href="http://vk.com/art_nysha") Группа вк автора персонажей
+            .header_block.container-fluid.hidden-xs
                 .row
                     .col-lg-3.col-md-3.col-sm-3.hidden-xs
                         %a#header_rioto(href="#rioto")
@@ -58,10 +60,10 @@
                 .row
                     .col-lg-3.col-md-3.col-sm-3.hidden-xs
                         %a(href="#candy")
-                            %img.img(title="Кенди" src="риото.png")
-                    .visible-xs
-                        %p.header_description
-                            Хочешь узнать больше о моих персонажах? Листай ниже!
+                            %img.img(title="Кенди" src="candy.png")
+                    -# .visible-xs
+                    -#     %p.header_description
+                    -#         Хочешь узнать больше о моих персонажах? Листай ниже!
                     .col-lg-6.col-md-6.col-sm-6.hidden-xs
                         %p.header_description
                             Хочешь узнать больше о моих персонажах? Листай ниже или кликай на изображение понравившегося героя!
@@ -73,13 +75,17 @@
                 .col-lg-6.col-md-6
                     %img#rioto.img(src="риотка.jpg")
                 .col-lg-6.block.col-md-6
-                    %p  Риото
+                    %p.head  Риото
                     %p  Самый продуманный персонаж. Придуман в 2014 году. 
                         Олицетворяет автора со стороны странности, необычности, ребячества, интереса и творчества. 
                         Поет, любит смотреть мульфильмы, есть чипсы и своего кролика. Впервые увидел его на подоконнике своей комнаты
                         с уличной стороны и влюбился. Живет с Кенди, не имеет паспорта и удостоверяющих документов,
                         не хочет делать, не работает (только фриланс). К техническим наукам относится с недоверием, больше
                         предпочитает интуицию. В прошлом дракон, не имеющий любви у родителей и потому сбежавший в мир людей.
+            .notblock
+                %p.head Немного интересных фактов...
+                %p Риото знаком с Кенди... Он также знает Тима, однако не играл с ним, ведь Тим не любит ребячество.
+                %p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque asperiores quis at ullam, maxime excepturi! Molestiae suscipit eum delectus, atque voluptatem eligendi porro aliquid eaque adipisci blanditiis aperiam! Ipsum, totam?
             .row
                 .col-lg-6.col-md-6
                     %img#candy.img(src="467.jpg" style="width:100%")
