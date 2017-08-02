@@ -14,9 +14,11 @@
     font-family: 'font4'
     src: url('4.ttf')
     font-weight: normal
-
+@font-face 
+    font-family: 'font5'
+    src: url('5.ttf')
+    font-weight: normal
 $darkblue: rgba(0, 117, 129, 0.6)
-
 .container
     max-width: 100%
 
@@ -74,7 +76,7 @@ header
     font-family: font2
     color: white
     text-align: center
-    font-size: 24px
+    font-size: 30px
 p.head
     font-size: 30px
 .navbar
@@ -96,13 +98,17 @@ html
     background: rgba(0, 117, 129, 0.5)
     padding: 2%
     color: white
-    font-size: 20px
+    font-size: 23px
     text-align: left
+    font-family: font5
 .notblock
-    background: #bae4fc
+    font-family: font5
+    background: rgba(167, 219, 216,0.5)
     color: rgba(0, 117, 129, 0.8)
-    font-size: 20px
-    margin-bottom: 17px
+    font-size: 23px
+    margin:
+        bottom: 17px
+        right: -15px
     padding: 15px
 .row
     margin-bottom: 2%
@@ -121,15 +127,14 @@ footer
     padding: 1%
     text-align: center
 .navbar-toggle
-    // padding-top: 5px
     color: white
     font-size: 30px
     border: 0
 @media all and (max-width: 768px)
+    menu
+        background-image: url('vk.svg')
     header.menu a
         padding-bottom: 20px
-    .navbar-header
-        // padding-bottom: 5px
     .header_description
         font-size: 25px
         margin: 0
@@ -140,7 +145,10 @@ footer
         margin:
             left: 15px
             right: 15px
-        font-size: 18px
+        font-size: 20px
+    .notblock
+        margin-right: 0
+        font-size: 20px
     .nav li a
         padding-left: 0
     .navbar-nav a
@@ -150,3 +158,5 @@ footer
         margin:
             left: 15px
             right: 15px
+    .notblock
+        margin-right: 0
