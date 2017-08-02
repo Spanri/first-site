@@ -29,7 +29,7 @@
 
     %body
         %header
-            .navbar(role="navigation")
+            .navbar(role="navigation" style="border:0")
                 .container-fluid(style="max-width:1200px;margin:auto;")
                     .navbar-header(style="border:0")
                         %button(type="button" class="navbar-toggle collapsed" data-target="#qwerty" data-toggle="collapse" aria-expanded="false")
@@ -40,36 +40,39 @@
                     %div(class="collapse navbar-collapse" id="qwerty" style="padding:0;border:0")
                         %ul(class="nav navbar-nav navbar-right" style="margin:0")
                             %li.menu
-                                %a(href="../index.html") Сайт автора персонажей
+                                %a.visible-xs(href="http://vk.com/art_nysha") Группа вк автора персонажей
+                                %a.hidden-xs(href="http://vk.com/art_nysha")
+                                    %img(src="vk.svg" style="width:40px;margin-top:-7px" title="Группа автора персонажей")
                             %li.menu
-                                %a(href="http://vk.com/art_nysha") Группа вк автора персонажей
+                                %a.visible-xs(href="../index.html") Сайт автора персонажей
+                                %a.hidden-xs(href="../index.html")
+                                    %img(src="earth.svg" style="width: 32px;margin-top:-3px;margin-left:-8px" title="Сайт автора персонажей")
             .header_block.container-fluid.hidden-xs
                 .row
                     .col-lg-3.col-md-3.col-sm-3.hidden-xs
                         %a#header_rioto(href="#rioto")
-                            %img.img(title="Риото" src="риото.png")
+                            %img.img(title="Риото, 22 года" data-toggle="tooltip" data-placement="bottom" src="candy.png")
                     .col-lg-3.col-md-3.col-sm-3.hidden-xs
                         %a(href="#aeli")
-                            %img.img(title="Аэль" src="риото.png")
+                            %img.img(title="Аэль, 24 года" data-toggle="tooltip" data-placement="bottom" src="candy.png")
                     .col-lg-3.col-md-3.col-sm-3.hidden-xs
                         %a(href="#richard")
-                            %img.img(title="Ричард" src="риото.png")
+                            %img.img(title="Ричард, 24 года" data-toggle="tooltip" data-placement="bottom" src="candy.png")
                     .col-lg-3.col-md-3.col-sm-3.hidden-xs
                         %a(href="#tim")
-                            %img.img(title="Тим" src="риото.png")
+                            %img.img(title="Тим, 14 лет" data-toggle="tooltip" data-placement="bottom" src="candy.png")
                 .row
                     .col-lg-3.col-md-3.col-sm-3.hidden-xs
                         %a(href="#candy")
-                            %img.img(title="Кенди" src="candy.png")
+                            %img.img(title="Кенди, 22 года" data-toggle="tooltip" data-placement="top" src="candy.png")
                     -# .visible-xs
                     -#     %p.header_description
                     -#         Хочешь узнать больше о моих персонажах? Листай ниже!
-                    .col-lg-6.col-md-6.col-sm-6.hidden-xs
-                        %p.header_description
-                            Хочешь узнать больше о моих персонажах? Листай ниже или кликай на изображение понравившегося героя!
+                    .col-lg-6.col-md-6.col-sm-6.hidden-xs(style="vertical-align: text-bottom")
+                        %p.header_description Хочешь узнать больше о моих персонажах? Листай ниже или кликай на изображение понравившегося героя!
                     .col-lg-3.col-md-3.col-sm-3.hidden-xs
                         %a(href="#vadim")
-                            %img.img(title="Вадим" src="риото.png")
+                            %img.img(title="Вадим, 38 лет" data-toggle="tooltip" data-placement="top" src="candy.png")
         .container-fluid.main(style="margin:auto;text-align:center;z-index:1")
             .row
                 .col-lg-6.col-md-6
@@ -123,12 +126,25 @@
                 %p А еще он - прототип брата автора, только более идеальный
             .row
                 .col-lg-6.col-md-6
-                    %img#richard.img(src="467.jpg" style="width:100%")
+                    %img#richard.img(src="ричард.jpg" style="width:100%")
                 .col-lg-6.block.col-md-6
                     %p.head Ричард
-                    %p% Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos praesentium, in facilis, exercitationem, itaque totam obcaecati aperiam hic odio error nihil nesciunt. Omnis maiores, veniam recusandae quo illum culpa quae.
+                    %p Привет, бро. Я Ричард, бультерьер, хотя я не уверен и мне вроде 24 уже. Я крч не вейплю, не курю и не 
+                        кручу спиннеры, но меня все равно считают позером.Нет, ну кто виноват, что у меня такая офигенная 
+                        внешность? А хвост... Ты видал такой у кого еще? Преклонись передо мной и дам посмотреть на меня еще, 
+                        ха. А вообще некогда мне, надо показать себя миру, последние новости из мемного мира узнать... 
+                        Где там мои колонки битс1488?
+                    %p Ладно, вообще, я люблю спать и не люблю убивать, честно. Но ты прикинь, мой хвост в моменты опасности
+                        может стать оружкой! Да я сам каждый раз в шоке. Поэтому плиз не подходи, если не собираешься че нить
+                        подарить. И это, если у меня вдруг глаза нальются кровью, это еще не значит, что я тебя убью.
+                        Мб у тебя завалялся кусочек мяса и я его учуял? Ну или конфетка, ок...
             .notblock
                 %p.head Еще чуть-чуть фактов
+                %p Ричард умен, но не сравнится с Тимом. Он любит склонять все живое к себе и управлять. Однако, его легко победить
+                    зимой. Этот позер ужасно боится холода, у него ведь такая короткая шерсть!
+                %p Глаза наливаются кровью, когда хочет спать, есть или убивать. Стоит учитывать все варианты...
+                %p Размер хвоста увеличивается в зависимости от количества убийств. Его хвост еще не самый длинный, видели и 
+                    побольше, но лучше с ним быть осторожнее. Можно его мемами задобрить.
             .row
                 .col-lg-6.col-md-6
                     %img#vadim.img(src="467.jpg" style="width:100%")
@@ -147,4 +163,8 @@
                 %p.head Кто же она?
         %footer
             &copy; Spanri, 2017
-
+        <script>
+            $(function () {
+                $('[data-toggle="tooltip"]').tooltip()
+            })
+        </script>
