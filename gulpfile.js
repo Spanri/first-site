@@ -55,7 +55,7 @@ gulp.task('clean', function() {
 });
 
 gulp.task('img', function() {
-    return gulp.src('www/img/*') // Берем все изображения из app
+    gulp.src('www/img/*') // Берем все изображения из app
         .pipe(cache(imagemin({ // Сжимаем их с наилучшими настройками
             interlaced: true,
             progressive: true,
@@ -63,9 +63,17 @@ gulp.task('img', function() {
             use: [pngquant()]
         })))
         .pipe(gulp.dest('dist/img')); // Выгружаем на продакшен
+    return gulp.src('www/pers/img/*') // Берем все изображения из app
+        .pipe(cache(imagemin({ // Сжимаем их с наилучшими настройками
+            interlaced: true,
+            progressive: true,
+            svgoPlugins: [{removeViewBox: false}],
+            use: [pngquant()]
+        })))
+        .pipe(gulp.dest('www/pers')); // Выгружаем на продакшен
 });
 
-gulp.task('build', ['clean','img', 'sass', 'scripts'], function() {
+gulp.task('build', ['clean','img', 'sass'], function() {
 
     var buildCss = gulp.src('www/css/*.css')
     .pipe(gulp.dest('dist/css'))
