@@ -47,7 +47,7 @@
                             %img.img(title="Риото, 22 года" data-toggle="tooltip" data-placement="bottom" src="candy.png")
                     .col-lg-3.col-md-3.col-sm-3.hidden-xs.wow.slideInLeft
                         %a(href="#aeli")
-                            %img.img(title="Аэль, 24 года" data-toggle="tooltip" data-placement="bottom" src="candy.png")
+                            %img.img(title="Аэли, 24 года" data-toggle="tooltip" data-placement="bottom" src="candy.png")
                     .col-lg-3.col-md-3.col-sm-3.hidden-xs.wow.slideInLeft
                         %a(href="#richard")
                             %img.img(title="Ричард, 24 года" data-toggle="tooltip" data-placement="bottom" src="candy.png")
@@ -71,13 +71,12 @@
                 .col-lg-6.col-md-6.wow.slideInLeft
                     #rioto-car(class="carousel slide" data-ride="carousel")
                         .carousel-inner
-                            .item.active(style="position:relative")
+                            .item.active
                                 %img#rioto.img(src="риотка.jpg")
-                                -# %p Нажми справа или слева!
                             .item
                                 %img#rioto.img(src="риотка4.jpg")
                             .item
-                                %img#rioto.img(src="риотка5.jpg" style="width:100%;margin:auto;")
+                                %img#rioto.img(src="риотка5.jpg")
                         <!-- Навигация для карусели -->
                         %a.hidden-xs(class="carousel-control left" href="#rioto-car" data-slide="prev")
                             <span class="glyphicon glyphicon-chevron-left"></span>
@@ -172,10 +171,16 @@
         <script src="wow-animation/wow.min.js"></script>
         <script>
             new WOW().init();
-        </script>
-        <script>
-            $(function () {
-                $('[data-toggle="tooltip"]').tooltip()
-            })
+
+            var hammer = new Hammer(document.querySelector('.carousel'));
+            var $carousel = $(".carousel").carousel({"interval":0});
+            hammer.get("swipe");
+            hammer.on("swipeleft", function(){
+                $carousel.carousel("next");
+            });
+            hammer.on("swiperight", function(){
+                $carousel.carousel("prev");
+            });
+
         </script>
 
