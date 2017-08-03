@@ -180,6 +180,23 @@
             hammer.on("swiperight", function(){
                 $carousel.carousel("prev");
             });
+            
+            var mc = new Hammer.Manager(hammer);
+            var pinch = new Hammer.Pinch();
+            var rotate = new Hammer.Rotate();
+
+            pinch.recognizeWith(rotate);
+            mc.add([pinch, rotate]);
+            var target = $('.map-controls');
+            mc.on("pinch rotate", function(ev) {
+                $('.logotext .txt').text(ev.scale);
+
+                function animate() {
+                    requestAnimationFrame( animate );
+                    target.css('transform', 'scale('+ev.scale+')')
+                }
+                requestAnimationFrameanimate();
+            });
 
         </script>
 
