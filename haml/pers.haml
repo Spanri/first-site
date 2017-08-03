@@ -11,6 +11,7 @@
         %link(href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet")
         %script(src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js")
         %script(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js")
+        %script(src="//cdn.jsdelivr.net/jquery.touchswipe/1.6.5/jquery.touchSwipe.min.js")
         %script(src="./pers.js")
         %link(rel="stylesheet" href="pers.css")
         %link(rel="shortcut icon" href="../Icons/cat2.ico" type="image/x-icon")
@@ -56,7 +57,7 @@
                             %img.img(title="Кенди, 22 года" data-toggle="tooltip" data-placement="top" src="candy.png")
                     .visible-xs
                         %p.header_description
-                            Это мои персонажи, но не все. Если хочешь увидеть больше артов с ними, кликай справа и слева картинок
+                            Это мои персонажи, но не все. Если хочешь увидеть больше артов с ними, листай картинки
                     .col-lg-6.col-md-6.col-sm-6.hidden-xs(style="vertical-align: text-bottom")
                         %p.header_description Хочешь узнать больше о моих персонажах? Листай ниже или кликай на изображение понравившегося героя!
                     .col-lg-3.col-md-3.col-sm-3.hidden-xs
@@ -75,9 +76,9 @@
                             .item
                                 %img#rioto.img(src="риотка5.jpg" style="width:100%;margin:auto;")
                         <!-- Навигация для карусели -->
-                        %a(class="carousel-control left" href="#rioto-car" data-slide="prev")
+                        %a.hidden-xs(class="carousel-control left" href="#rioto-car" data-slide="prev")
                             <span class="glyphicon glyphicon-chevron-left"></span>
-                        %a(class="carousel-control right" href="#rioto-car" data-slide="next")
+                        %a.hidden-xs(class="carousel-control right" href="#rioto-car" data-slide="next")
                             <span class="glyphicon glyphicon-chevron-right"></span>
                 .col-lg-6.block.col-md-6
                     %p.head  Риото
