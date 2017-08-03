@@ -1,5 +1,5 @@
 !!! 5
-%html
+%html(lang="ru")
 
     %head
         %title Мои персонажи
@@ -11,21 +11,10 @@
         %link(href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet")
         %script(src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js")
         %script(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js")
+        %script(src="./pers.js")
         %link(rel="stylesheet" href="pers.css")
         %link(rel="shortcut icon" href="../Icons/cat2.ico" type="image/x-icon")
         %meta(name="theme-color" content="rgba(0, 117, 129, 0.5)")
-        <!-- Оно не робиииит (((( -->
-        <script type="text/javascript">
-            $("#header_rioto").click(function () {
-                $("html, body").animate({
-                    scrollTop: $($(this).attr("href")).offset().top + "px"
-                }, {
-                        duration: 500,
-                        easing: "swing"
-                    });
-                return false;
-            });
-        </script>
 
     %body
         %header
@@ -47,7 +36,7 @@
                                 %a.visible-xs(href="../index.html") Сайт автора персонажей
                                 %a.hidden-xs(href="../index.html")
                                     %img(src="earth.svg" style="width: 32px;margin-top:-3px;margin-left:-8px" title="Сайт автора персонажей")
-            .header_block.container-fluid.hidden-xs
+            .header_block.container-fluid
                 .row
                     .col-lg-3.col-md-3.col-sm-3.hidden-xs
                         %a#header_rioto(href="#rioto")
@@ -65,9 +54,9 @@
                     .col-lg-3.col-md-3.col-sm-3.hidden-xs
                         %a(href="#candy")
                             %img.img(title="Кенди, 22 года" data-toggle="tooltip" data-placement="top" src="candy.png")
-                    -# .visible-xs
-                    -#     %p.header_description
-                    -#         Хочешь узнать больше о моих персонажах? Листай ниже!
+                    .visible-xs
+                        %p.header_description
+                            Это мои персонажи, но не все. Если хочешь увидеть больше артов с ними, кликай справа и слева картинок
                     .col-lg-6.col-md-6.col-sm-6.hidden-xs(style="vertical-align: text-bottom")
                         %p.header_description Хочешь узнать больше о моих персонажах? Листай ниже или кликай на изображение понравившегося героя!
                     .col-lg-3.col-md-3.col-sm-3.hidden-xs
@@ -76,10 +65,23 @@
         .container-fluid.main(style="margin:auto;text-align:center;z-index:1")
             .row
                 .col-lg-6.col-md-6
-                    %img#rioto.img(src="риотка.jpg")
+                    #rioto-car(class="carousel slide" data-ride="carousel")
+                        .carousel-inner
+                            .item.active(style="position:relative")
+                                %img#rioto.img(src="риотка.jpg")
+                                -# %p Нажми справа или слева!
+                            .item
+                                %img#rioto.img(src="риотка4.jpg")
+                            .item
+                                %img#rioto.img(src="риотка5.jpg" style="width:100%;margin:auto;")
+                        <!-- Навигация для карусели -->
+                        %a(class="carousel-control left" href="#rioto-car" data-slide="prev")
+                            <span class="glyphicon glyphicon-chevron-left"></span>
+                        %a(class="carousel-control right" href="#rioto-car" data-slide="next")
+                            <span class="glyphicon glyphicon-chevron-right"></span>
                 .col-lg-6.block.col-md-6
                     %p.head  Риото
-                    %p  Я самый продуманный персонаж. Придуман аж в 2014 году! 
+                        %p  Я самый продуманный персонаж. Придуман аж в 2014 году! 
                         Спанри говорит, что я олицетворяю ее со стороны странности, необычности, ребячества, интереса и творчества. 
                         Но я хочу быть оригинальным! Я пою, люблю смотреть мульфильмы, есть чипсы и еще обожаю своего кролика. Впервые я его увидел на подоконнике своей комнаты
                         с уличной стороны и влюбился. Живу с Кенди, а еще у меня нет паспорта и вообще удостоверяющих документов, ха-ха! Не хочу
