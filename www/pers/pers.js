@@ -1,4 +1,5 @@
 $(document).ready(function() {
+
     $("#rioto-car").carousel({
          interval : false
     });

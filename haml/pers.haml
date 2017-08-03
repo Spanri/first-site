@@ -9,9 +9,12 @@
         %meta(name="viewport" content="width=device-width, initial-scale=1.0")
         <!-- А тут остальное -->
         %link(href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet")
+        %link(rel="stylesheet" type="text/css" href="wow-animation/animate.min.css")
         %script(src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js")
         %script(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js")
-        %script(src="//cdn.jsdelivr.net/jquery.touchswipe/1.6.5/jquery.touchSwipe.min.js")
+        %script(src="https://cdn.jsdelivr.net/jquery.touchswipe/1.6.5/jquery.touchSwipe.min.js")
+        %script(src="https://hammerjs.github.io/dist/hammer.js")
+        %script(src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js")
         %script(src="./pers.js")
         %link(rel="stylesheet" href="pers.css")
         %link(rel="shortcut icon" href="../Icons/cat2.ico" type="image/x-icon")
@@ -39,33 +42,33 @@
                                     %img(src="earth.svg" style="width: 32px;margin-top:-3px;margin-left:-8px" title="Сайт автора персонажей")
             .header_block.container-fluid
                 .row
-                    .col-lg-3.col-md-3.col-sm-3.hidden-xs
+                    .col-lg-3.col-md-3.col-sm-3.hidden-xs.wow.slideInLeft
                         %a#header_rioto(href="#rioto")
                             %img.img(title="Риото, 22 года" data-toggle="tooltip" data-placement="bottom" src="candy.png")
-                    .col-lg-3.col-md-3.col-sm-3.hidden-xs
+                    .col-lg-3.col-md-3.col-sm-3.hidden-xs.wow.slideInLeft
                         %a(href="#aeli")
                             %img.img(title="Аэль, 24 года" data-toggle="tooltip" data-placement="bottom" src="candy.png")
-                    .col-lg-3.col-md-3.col-sm-3.hidden-xs
+                    .col-lg-3.col-md-3.col-sm-3.hidden-xs.wow.slideInLeft
                         %a(href="#richard")
                             %img.img(title="Ричард, 24 года" data-toggle="tooltip" data-placement="bottom" src="candy.png")
-                    .col-lg-3.col-md-3.col-sm-3.hidden-xs
+                    .col-lg-3.col-md-3.col-sm-3.hidden-xs.wow.slideInLeft
                         %a(href="#tim")
                             %img.img(title="Тим, 14 лет" data-toggle="tooltip" data-placement="bottom" src="candy.png")
                 .row
-                    .col-lg-3.col-md-3.col-sm-3.hidden-xs
+                    .col-lg-3.col-md-3.col-sm-3.hidden-xs.wow.slideInRight
                         %a(href="#candy")
                             %img.img(title="Кенди, 22 года" data-toggle="tooltip" data-placement="top" src="candy.png")
-                    .visible-xs
+                    .visible-xs.wow.zoomIn
                         %p.header_description
-                            Это мои персонажи, но не все. Если хочешь увидеть больше артов с ними, листай картинки
-                    .col-lg-6.col-md-6.col-sm-6.hidden-xs(style="vertical-align: text-bottom")
+                            Это мои персонажи, но не все. Если хочешь увидеть больше артов с ними, свапай картинки
+                    .col-lg-6.col-md-6.col-sm-6.hidden-xs.wow.zoomIn(style="vertical-align: text-bottom")
                         %p.header_description Хочешь узнать больше о моих персонажах? Листай ниже или кликай на изображение понравившегося героя!
-                    .col-lg-3.col-md-3.col-sm-3.hidden-xs
+                    .col-lg-3.col-md-3.col-sm-3.hidden-xs.wow.slideInRight
                         %a(href="#vadim")
                             %img.img(title="Вадим, 38 лет" data-toggle="tooltip" data-placement="top" src="candy.png")
         .container-fluid.main(style="margin:auto;text-align:center;z-index:1")
             .row
-                .col-lg-6.col-md-6
+                .col-lg-6.col-md-6.wow.slideInLeft
                     #rioto-car(class="carousel slide" data-ride="carousel")
                         .carousel-inner
                             .item.active(style="position:relative")
@@ -80,7 +83,7 @@
                             <span class="glyphicon glyphicon-chevron-left"></span>
                         %a.hidden-xs(class="carousel-control right" href="#rioto-car" data-slide="next")
                             <span class="glyphicon glyphicon-chevron-right"></span>
-                .col-lg-6.block.col-md-6
+                .col-lg-6.block.col-md-6.wow.slideInRight
                     %p.head  Риото
                         %p  Я самый продуманный персонаж. Придуман аж в 2014 году! 
                         Спанри говорит, что я олицетворяю ее со стороны странности, необычности, ребячества, интереса и творчества. 
@@ -88,15 +91,15 @@
                         с уличной стороны и влюбился. Живу с Кенди, а еще у меня нет паспорта и вообще удостоверяющих документов, ха-ха! Не хочу
                         их делать, потому что так мне не надо работать (ну только фриланс). К техническим наукам этим я отношусь с недоверием, больше
                         люблю интуицию. В прошлом дракон! Правда не имеющий любви у родителей и потому сбежавший в мир людей...
-            .notblock
+            .notblock.wow.zoomIn
                 %p.head Немного интересных фактов!
                 %p Первый человек, с которым познакомился Риото - Кенди. Ему понравился дом, поэтому он даже пытался играть хорошего
                     мальчика, чтобы завоевать доверие Кенди. Когда он понял, что это необязательно, ребячесть дала волю. 
                 %p Риото также знает Тима, однако не играл с ним, ведь Тим не любит детские забавы.
             .row
-                .col-lg-6.col-md-6
+                .col-lg-6.col-md-6.wow.slideInLeft
                     %img#candy.img(src="кенди2.jpg" style="width:100%")
-                .col-lg-6.block.col-md-6
+                .col-lg-6.block.col-md-6.wow.slideInRight
                     %p.head Кенди
                     %p Спанри и еще один автор с multator.ru на общем аккаунте создали меня. После этого аккаунт был заброшен, 
                         но Спанри было жалко такого замечательного героя и она придумала мне историю. А потом появился Риото, благодаря
@@ -106,21 +109,21 @@
                     %p Я работаю певицей в баре, однако не люблю шум и всегда ругаю Риото, если он создает слишком много этого шума.
                         Хочу стать богатой и целыми днями только есть и смотреть сериалы. Очень домашняя, хотя, как и у всех, бывают
                         всплески энергии.
-            .notblock
+            .notblock.wow.zoomIn
                 %p.head Больше фактов о персонажах!
                 %p Кенди впустила в дом Риото потому, что он ей показался красивым. Но она сама утверждает, 
                     что это из-за того, что у нее было скучно дома. Да-да.
                 %p Первоначально Кенди носила 2 хвоста и клетчатую рубашку, однако автор отказалась от этого.
             .row
-                .col-lg-6.col-md-6
+                .col-lg-6.col-md-6.wow.slideInLeft
                     %img#tim.img(src="тим.jpg" style="width:100%")
-                .col-lg-6.block.col-md-6
+                .col-lg-6.block.col-md-6.wow.slideInRight
                     %p.head Тим
                     %p Серьезно, мне нечего сказать о себе! Я обычный подросток, мне 14, люблю физику и учить языки программирования. Ты что, даже не знаешь,
                         что это? Пожалуйста, не подходи. Мне нужно личное пространство. А еще одноклассники такие шумные и тупые! 
                     %p Что, еще о себе рассказать? Ну... Я браслеты люблю, мясо... еще в игры играть. Че сказать? А, окей. Тут Спанри говорит, что 
                         я олицетворяю ее ум и хикканутость. Стоп, что?? Все, конец интервью, отстаньте!
-            .notblock
+            .notblock.wow.zoomIn
                 %p.head Что-то интересненькое о Тиме...
                 %p Тим был брошен родителями в 2 года из-за нагрянувшего очень хорошего предложения работы, не совместимого с ребенком.
                 %p В 9 лет юного чехословацкого влчака усыновила Аели, но травмы Тима не прошли и он остался обижен на мир.
@@ -128,9 +131,9 @@
                     Технари опасны...
                 %p А еще он - прототип брата автора, только более идеальный
             .row
-                .col-lg-6.col-md-6
+                .col-lg-6.col-md-6.wow.slideInLeft
                     %img#richard.img(src="ричард.jpg" style="width:100%")
-                .col-lg-6.block.col-md-6
+                .col-lg-6.block.col-md-6.wow.slideInRight
                     %p.head Ричард
                     %p Привет, бро. Я Ричард, бультерьер, хотя я не уверен и мне вроде 24 уже. Я крч не вейплю, не курю и не 
                         кручу спиннеры, но меня все равно считают позером.Нет, ну кто виноват, что у меня такая офигенная 
@@ -141,7 +144,7 @@
                         может стать оружкой! Да я сам каждый раз в шоке. Поэтому плиз не подходи, если не собираешься че нить
                         подарить. И это, если у меня вдруг глаза нальются кровью, это еще не значит, что я тебя убью.
                         Мб у тебя завалялся кусочек мяса и я его учуял? Ну или конфетка, ок...
-            .notblock
+            .notblock.wow.zoomIn
                 %p.head Еще чуть-чуть фактов
                 %p Ричард умен, но не сравнится с Тимом. Он любит склонять все живое к себе и управлять. Однако, его легко победить
                     зимой. Этот позер ужасно боится холода, у него ведь такая короткая шерсть!
@@ -149,25 +152,30 @@
                 %p Размер хвоста увеличивается в зависимости от количества убийств. Его хвост еще не самый длинный, видели и 
                     побольше, но лучше с ним быть осторожнее. Можно его мемами задобрить.
             .row
-                .col-lg-6.col-md-6
+                .col-lg-6.col-md-6.wow.slideInLeft
                     %img#vadim.img(src="467.jpg" style="width:100%")
-                .col-lg-6.block.col-md-6
+                .col-lg-6.block.col-md-6.wow.slideInRight
                     %p.head Вадим
                     %p% Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi cupiditate dolores ipsam, eos tenetur optio animi, adipisci enim atque fugit facilis nulla minima assumenda repudiandae aperiam delectus eligendi quibusdam nobis!
-            .notblock
+            .notblock.wow.zoomIn
                 %p.head Сплетни о персонаже?!
             .row
-                .col-lg-6.col-md-6
+                .col-lg-6.col-md-6.wow.slideInLeft
                     %img#aeli.img(src="467.jpg" style="width:100%")
-                .col-lg-6.block.col-md-6
+                .col-lg-6.block.col-md-6.wow.slideInRight
                     %p.head Аэли
                     %p% Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo quae voluptate ipsum, quibusdam ea error similique, ducimus illum cumque neque, saepe consequuntur nulla, quo distinctio nihil! Harum temporibus recusandae nobis.
-            .notblock
+            .notblock.wow.zoomIn
                 %p.head Кто же она?
         %footer
             &copy; Spanri, 2017
+        <script src="wow-animation/wow.min.js"></script>
+        <script>
+            new WOW().init();
+        </script>
         <script>
             $(function () {
                 $('[data-toggle="tooltip"]').tooltip()
             })
         </script>
+
