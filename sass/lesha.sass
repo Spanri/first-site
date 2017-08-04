@@ -1,0 +1,68 @@
+
+$orange: rgb(255, 140, 0)
+$blue: rgb(0, 191, 255)
+
+body
+    background: rgb(38, 40, 46)
+.icon
+    width: 25px
+    &:hover
+        .cls-1
+            fill: $blue
+            transition-property: fill
+            transition-duration: 0.3s
+            transition-timing-function: ease-in
+        .cls-2
+            stroke: $blue
+            transition-property: stroke
+            transition-duration: 0.3s
+            transition-timing-function: ease-in
+.cls-1
+    fill: white
+.cls-2
+    fill: none
+    stroke: white
+    stroke-miterlimit: 10
+    stroke-width: 40px
+header
+    // background: url('img/head.png')
+    background: $orange
+    background: linear-gradient(to left, #641b00, #fe6b24)
+    background-size: 100%
+    .menu a
+        color: white
+        font-size: 15px
+        font-weight: 700
+    .menu a:hover
+        color: white
+        background: $blue
+        transition-property: background
+        transition-duration: 0.3s
+        transition-timing-function: ease-in
+    .navbar-brand
+        padding: 10px
+        // p
+        //     display: inline-block
+        //     margin: 0
+        //     font-family: Arial, Helvetica, sans-serif
+        //     font-weight: 900
+        //     color: white
+.description
+    color: white
+    margin: auto
+        top: 5%
+        left: 10%
+        right: 10%
+        bottom: 5%
+    text-align: center
+    h2
+        margin: auto
+            left: 3%
+            right: 3%
+            bottom: 1%
+
+.program
+    background: white
+    margin: auto
+        left: 2%
+        right: 2%

@@ -1,26 +1,23 @@
 @font-face 
     font-family: 'font1'
-    src: url('fonts/1.woff2') format('woff2'), url('fonts/1.woff') format('woff')
+    src: url('fonts/1.woff2') format('woff2'), url('fonts/1.woff') format('woff'), url('fonts/1.eot') format('eot')
     font-weight: normal
+    font-size: 75px
 @font-face
     font-family: 'font2'
-    src: url('fonts/2.woff2') format('woff2'), url('fonts/1.woff') format('woff')
+    src: url('fonts/2.woff2') format('woff2'), url('fonts/2.woff') format('woff'), url('fonts/2.eot') format('eot')
     font-weight: normal
 @font-face 
     font-family: 'font3'
-    src: url('fonts/3.woff2') format('woff2'), url('fonts/1.woff') format('woff')
+    src: url('fonts/3.woff2') format('woff2'), url('fonts/3.woff') format('woff'), url('fonts/3.eot') format('eot')
     font-weight: normal
 @font-face 
     font-family: 'font4'
-    src: url('fonts/4.woff2') format('woff2'), url('fonts/1.woff') format('woff')
+    src: url('fonts/4.woff2') format('woff2'), url('fonts/4.woff') format('woff'), url('fonts/4.eot') format('eot')
     font-weight: normal
 @font-face 
     font-family: 'font5'
-    src: url('fonts/5.woff2') format('woff2'), url('fonts/1.woff') format('woff')
-    font-weight: normal
-@font-face 
-    font-family: 'font7'
-    src: url('fonts/7.ttf')
+    src: url('fonts/5.woff2') format('woff2'), url('fonts/5.woff') format('woff'), url('fonts/5.eot') format('eot')
     font-weight: normal
 @font-face 
     font-family: 'font8'
@@ -29,6 +26,21 @@
 $darkblue: rgba(0, 117, 129, 0.6)
 .container
     max-width: 100%
+
+
+.carousel.fade
+	opacity: 1
+.carousel.fade .item
+	display: block
+	position: absolute	
+	left: 0
+	top: 0
+	width: 100%
+	opacity: 0
+	transition: opacity .5s
+.carousel.fade .item.active
+	position: relative
+	opacity: 1
 
 .item p
     position: absolute
@@ -149,9 +161,9 @@ html
 .row
     margin-bottom: 2%
 .navbar-brand
-    font-family: font1
     color: white
     font-size: 75px
+    font-family: font1
 footer
     padding: 1%
     text-align: center

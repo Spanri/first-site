@@ -43,7 +43,7 @@
                 .row
                     .col-lg-3.col-md-3.col-sm-3.hidden-xs.wow.slideInLeft
                         %a#header_rioto(href="#rioto")
-                            %img.img(title="Риото, 22 года" data-toggle="tooltip" data-placement="bottom" src="img2/candy.png")
+                            %img.img(title="Риото, 22 года" data-toggle="tooltip" data-placement="bottom" src="img2/rioto.png")
                     .col-lg-3.col-md-3.col-sm-3.hidden-xs.wow.slideInLeft
                         %a(href="#aeli")
                             %img.img(title="Аэли, 24 года" data-toggle="tooltip" data-placement="bottom" src="img2/candy.png")
@@ -68,9 +68,11 @@
         .container-fluid.main(style="margin:auto;text-align:center;z-index:1")
             .row
                 .col-lg-6.col-md-6.wow.slideInLeft
-                    #rioto-car(class="carousel slide" data-ride="carousel")
+                    #rioto-car(class="carousel fade" data-ride="carousel")
                         .carousel-inner
                             .item.active
+                                %img#rioto.img(src="img2/риото4.png")
+                            .item
                                 %img#rioto.img(src="img2/риотка.jpg")
                             .item
                                 %img#rioto.img(src="img2/риотка4.jpg")
