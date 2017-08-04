@@ -23,6 +23,16 @@
   src: url("fonts/5.woff2") format("woff2"), url("fonts/1.woff") format("woff");
   font-weight: normal; }
 
+@font-face {
+  font-family: 'font7';
+  src: url("fonts/7.ttf");
+  font-weight: normal; }
+
+@font-face {
+  font-family: 'font8';
+  src: url("fonts/8.ttf");
+  font-weight: normal; }
+
 .container {
   max-width: 100%; }
 
@@ -76,8 +86,8 @@ header {
   margin-bottom: 1%; }
   header .menu a {
     color: white;
-    font-family: font3;
-    font-size: 20px; }
+    font-family: font8;
+    font-size: 18px; }
     header .menu a:hover {
       color: rgba(0, 117, 129, 0.6);
       -webkit-transition-property: color;
@@ -126,13 +136,14 @@ header {
     margin-bottom: 2%; }
 
 .header_description {
-  font-family: font2;
+  font-family: font8;
   color: white;
   text-align: center;
-  font-size: 30px; }
+  font-size: 25px; }
 
 p.head {
-  font-size: 30px; }
+  font-size: 30px;
+  font-family: font8; }
 
 .navbar {
   margin-bottom: 0; }
@@ -203,7 +214,7 @@ footer {
     display: inline-block !important;
     vertical-align: text-bottom; }
   .header_description {
-    font-size: 25px;
+    font-size: 20px;
     margin: 0;
     padding-left: 1%;
     padding-right: 1%; }

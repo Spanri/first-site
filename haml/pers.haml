@@ -151,18 +151,26 @@
                     побольше, но лучше с ним быть осторожнее. Можно его мемами задобрить.
             .row
                 .col-lg-6.col-md-6.wow.slideInLeft
-                    %img#vadim.img(src="img2/467.png" style="width:100%")
+                    %img#vadim.img(src="img2/вадим.jpg" style="width:100%")
                 .col-lg-6.block.col-md-6.wow.slideInRight
                     %p.head Вадим
-                    %p% Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi cupiditate dolores ipsam, eos tenetur optio animi, adipisci enim atque fugit facilis nulla minima assumenda repudiandae aperiam delectus eligendi quibusdam nobis!
+                    %p Я - самый первый персонаж Спанри. Сначала я вообще обладал магией во лбу(потому что там кристалл был), имел имя Ввадюша и 
+                        был активным малым. Но время идет, люди растут, вырос и я, стал Вадимом, инструктором по велоспорту. Люблю спорт и не 
+                        сидеть на месте. А еще вкусно есть. "Статен, высок, красив" - так писала обо мне Спанри. Я не против.
             .notblock.wow.zoomIn
                 %p.head Сплетни о персонаже?!
+                %p Вадим - парень Аэли, практически жених. Но что-то у них не идет. Может из-за разницы в 13 лет?
+                %p Вадим строит из себя организованного и взрослого человека, но рядом с Аэли он все тот же Ввадюша, что и раньше. 
             .row
                 .col-lg-6.col-md-6.wow.slideInLeft
                     %img#aeli.img(src="img2/467.png" style="width:100%")
                 .col-lg-6.block.col-md-6.wow.slideInRight
                     %p.head Аэли
-                    %p% Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo quae voluptate ipsum, quibusdam ea error similique, ducimus illum cumque neque, saepe consequuntur nulla, quo distinctio nihil! Harum temporibus recusandae nobis.
+                    %p Привеееет. Помню, когда меня Спанри создавала, то так долго продумывала! Я ее первый осознанный персонаж и она хотела,
+                        чтобы я была идеальной! Но должна же быть изюминка... Может во мне она есть, не знааааю. Кто я? Ну, я антропоморф, но люблю
+                        косить под лис и собак, изящных и ловких. А еще я обожаю мясо, танцевать, петь иногда... Но работаю консультантом одежды. И что?
+                        Зато вон какой у меня Вадя! А еще у меня длинный хвост, не зависимо от формы и мне это даже нравится. На него можно лечь,
+                        если рядом нет подушки. Предусмотрительно, Спанри, спасибо!
             .notblock.wow.zoomIn
                 %p.head Кто же она?
         %footer
@@ -179,23 +187,6 @@
             });
             hammer.on("swiperight", function(){
                 $carousel.carousel("prev");
-            });
-            
-            var mc = new Hammer.Manager(hammer);
-            var pinch = new Hammer.Pinch();
-            var rotate = new Hammer.Rotate();
-
-            pinch.recognizeWith(rotate);
-            mc.add([pinch, rotate]);
-            var target = $('.map-controls');
-            mc.on("pinch rotate", function(ev) {
-                $('.logotext .txt').text(ev.scale);
-
-                function animate() {
-                    requestAnimationFrame( animate );
-                    target.css('transform', 'scale('+ev.scale+')')
-                }
-                requestAnimationFrameanimate();
             });
 
         </script>
