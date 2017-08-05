@@ -188,6 +188,17 @@ html {
   font-size: 23px;
   text-align: left;
   font-family: font5; }
+  .block:hover {
+    border: dashed;
+    -webkit-transition-property: border;
+    -o-transition-property: border;
+    transition-property: border;
+    -webkit-transition-duration: 0.1s;
+         -o-transition-duration: 0.1s;
+            transition-duration: 0.1s;
+    -webkit-transition-timing-function: ease-in;
+         -o-transition-timing-function: ease-in;
+            transition-timing-function: ease-in; }
 
 .notblock {
   font-family: font5;
@@ -197,6 +208,29 @@ html {
   margin-bottom: 17px;
   margin-right: -15px;
   padding: 15px; }
+  .notblock:hover {
+    border: dashed;
+    -webkit-transition-property: border;
+    -o-transition-property: border;
+    transition-property: border;
+    -webkit-transition-duration: 0.1s;
+         -o-transition-duration: 0.1s;
+            transition-duration: 0.1s;
+    -webkit-transition-timing-function: ease-in;
+         -o-transition-timing-function: ease-in;
+            transition-timing-function: ease-in; }
+
+.carousel:hover {
+  border: dashed;
+  -webkit-transition-property: border;
+  -o-transition-property: border;
+  transition-property: border;
+  -webkit-transition-duration: 0.1s;
+       -o-transition-duration: 0.1s;
+          transition-duration: 0.1s;
+  -webkit-transition-timing-function: ease-in;
+       -o-transition-timing-function: ease-in;
+          transition-timing-function: ease-in; }
 
 .row {
   margin-bottom: 2%; }

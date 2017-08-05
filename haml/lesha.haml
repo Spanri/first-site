@@ -11,53 +11,80 @@
         %link(rel="shortcut icon" href="./img/icon.ico" type="image/x-icon")
     %body
         %header
-            .navbar(role="navigation" style="padding:0;border:0")
+            .navbar.navbar-fixed-top(role="navigation")
                 .container-fluid
-                    .navbar-header
+                    .navbar-header(style="border:0")
+                        %button(type="button" class="navbar-toggle collapsed" data-target="#qwerty" data-toggle="collapse" aria-expanded="false")
+                            %span(class="glyphicon glyphicon-tree-conifer" style="color:white;font-size:20px")
                         .navbar-brand
                             %svg.heart-icon.icon(xmlns="http://www.w3.org/2000/svg" viewBox="0 0 190.77 252.71")
-                                %g
-                                    %rect(width="512" height="512")
                                 %path.cls-1(d="M203.88,218.33c-22.69,33.46-22.33,66.08-22.15,82.15,0.34,30.84,9.94,54.82,16.11,70.24,5.52,13.79,18.12,41.36,20.62,40.64a0.39,0.39,0,0,0,.19-0.14l47-.62a190.4,190.4,0,0,1-21.48-33.93c-7.63-15.51-27.1-56.57-14.77-104.17,2.52-9.71,6.71-25.16,20.13-41.07C256.08,223.65,267,211,287.1,204a89.41,89.41,0,0,1,46.31-3L332.5,159.6c-12.54-1.41-38.46-2.75-66.88,8.14C229.29,181.67,211.65,206.87,203.88,218.33Z" transform="translate(-181.7 -158.66)")
                                 %path.cls-2(d="M338.66,251.24c-1.53-1.41-14.57-13.06-33.13-10-17.11,2.78-25.66,15.89-26.92,17.9-1.48,2.41-8.94,15.1-4.5,29.95,0.75,2.51,3.94,12.11,13.2,18.4,15.26,10.36,27.88-1.23,44.72,7.66,10.49,5.54,17.88,16.52,19.87,27.92,2.51,14.36-3.56,29.36-14.91,38.32-14,11.06-36.1,13-50.24,1.09-11.18-9.41-12.47-23.33-12.7-26.83" transform="translate(-181.7 -158.66)")
-                            -# %p &#8194;masque
-                    %div(class="collapse navbar-collapse" style="padding:0;border:0")
-                        %ul(class="nav navbar-nav navbar-right")
-                            %li.menu 
-                                %a(href="./bml/bml.html") О BML-модели
+                    .collapse.navbar-collapse#qwerty
+                        %ul.nav.navbar-nav.navbar-right
                             %li.menu
-                                %a(href="./bml/help.html") Инструкция
-        .description
-            %h2 Модель траффика BML – самоорганизованный клеточный автомат
-            %p  Он моделирует транспортный поток и состоит из некоторого количества машин, представленных как точки на плоскости со случайной стартовой 
-                позицией, где каждая машина может быть одного из двух типов: те, которые могут двигаться только снизу-вверх (красные), и 
-                те, которые могут двигаться только слева-направо (синие). Два типа автомобилей поочерёдно двигаются. 
-                В течение каждого хода, все машины продвигаются на один шаг, если они не заблокированы другой машиной. 
-        .program
-            %form(name ="form")
-            %p Поле:
-                %input(id="Set_X" title="Число клеток по вертикали" value="10" size="3") 
-                x 
-                    %input(id="Set_Y" type="text" title="Число клеток по горизонтали" value="10" size="3") 
-                    Количество машин: 
-                        %input(id="Car_N" value="40" size="3")
-            <br>
-            <table id="BMLsw">
-                <tr><td>Классическая BML-модель:</td><td>Вероятностная:</td></tr>
-                <tr><td><input name="Prior" type="radio" value="Blue"> Синие
-                    <br>
-                    <input name="Prior" type="radio" value="Red"> Красные</td>
-                    <td><input name="Prior" type="radio" value="Ver" checked=""> Синие (0) <input id="verPrior" title="Вероятность приоритета красных" value="0.5" size="1"> (1)Красные</td>
-                </tr>
-            </table>
-            <input id="Submit_Par" type="button" value="Создать"> <input id="Tick" type="button" value="Шаг"> <input id="Cont" type="button" value="Старт/Стоп"> <input id="timeStep" title="Задержка отображения" value="150" size="3"> (мс)
-            <p>
-            <div id="yspeed" class="left"></div>
-            <div id="aspeed" class="left"></div>
-            <div id="wrapper" class="clear">
-                <div id="caf" class="left"></div>
-                <div id="xspeed" class="left"></div>
-            </div>
-            <script src="script.js"></script>
+                                %a(href="./bml/help.html") Инструкция   
+                            %li.menu
+                                %a(href="https://www.jasondavies.com/bml/") Дополнительно
+        .bighead(style="margin-top:51px")
+            %p Модель траффика BML
+        .description.col-lg-12.col-md-12.col-sm-12.col-xs-12
+            .width
+                %h2 Что это?
+                %p Самоорганизованный клеточный автомат. Он моделирует транспортный поток.
+        .description.how.col-lg-12.col-md-12.col-sm-12.col-xs-12
+            .width
+                .col-lg-6.col-md-6
+                    %h2 Как это работает?
+                    %p  BML состоит из некоторого количества машин в виде точек на плоскости со случайной стартовой 
+                        позицией. Каждая машина может быть одного из 2 типов: те, которые могут двигаться только снизу-вверх, 
+                        или те, кто только слева-направо. Эти 2 типа поочерёдно двигаются на 1 шаг, если они не заблокированы 
+                        другой машиной. 
+                .col-lg-6.col-md-6
+                    %img(src="img/sampleBML.png")
+        .description.col-lg-12.col-md-12.col-sm-12.col-xs-12
+            .width
+                %h2 Как узнать больше об этом?
+                %a.more(href="./bml/bml.html") Кликнуть сюда
+        .program.col-lg-12.col-md-12.col-sm-12.col-xs-12.slideinLeft
+            .width
+                %h2(style="color:white;text-align:center") Попробуй в действии!
+                %form(name ="form")
+                    %p(style="text-align:center;padding:5px") Поле: &nbsp
+                        %input(id="Set_X" title="Число клеток по вертикали" value="10" size="3") 
+                        x 
+                            %input(id="Set_Y" type="text" title="Число клеток по горизонтали" value="10" size="3")
+                            %br.visible-xs
+                            Количество машин: 
+                                %input(id="Car_N" value="40" size="3")
+                    %table(id="BMLsw").row
+                        .col-lg-6.col-md-6.col-sm-6.col-xs-6(style="text-align:center")
+                            %p Классическая модель:
+                            <input type="radio" name="Prior" value="Blue"> Синие
+                            <input type="radio" name="Prior" value="Red"> Красныe
+                        .col-lg-6.col-md-6.col-sm-6.col-xs-6(style="text-align:center")
+                            %p Вероятностная модель:
+                            <input name="Prior" type="radio" value="Ver" checked=""> Синие (0)
+                            <input id="verPrior" title="Вероятность приоритета красных" value="0.5" size="1"> Красные(1)
+                    .but
+                        %button(id="Submit_Par") Создать
+                        %button(id="Tick") Шаг
+                        %button(id="Cont") Старт/Стоп
+                        %input(id="timeStep" value="150" title="Задержка отображения" size="3") (мс)
+                    %p
+                    #attention
+                    .left#yspeed
+                    .left#aspeed
+                    .clear#wrapper
+                        .left#caf
+                        .left#xspeed
+                    %script(src="script.js")
+        -# %footer
+            %p Designed by Spanri, developed by Rs-masque
+        %script(src="wow-animation/wow.min.js")
+        %script(src="//atmpl.ru/design/scroll-effect/2015/hiding-menu/jquery.bootstrap-autohidingnavbar.min.js")
+        %script
+            $("div.navbar.navbar-fixed-top").autoHidingNavbar();
+            new WOW().init();
        
     
