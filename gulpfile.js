@@ -9,13 +9,9 @@ var cache = require('gulp-cache');
 var autoprefixer = require('gulp-autoprefixer');// Подключаем библиотеку для автоматического добавления префиксов
 
 gulp.task('haml', function () {
-    gulp.src(['haml/*.haml', '!haml/headr.haml', '!haml/pers.haml', '!haml/lesha.haml'])
+    gulp.src(['haml/*.haml', '!haml/headr.haml', '!haml/pers.haml'])
         .pipe(haml())
         .pipe(gulp.dest('www'))
-        .pipe(browserSync.reload({ stream: true }));
-    gulp.src(['haml/lesha.haml'])
-        .pipe(haml())
-        .pipe(gulp.dest('www/lesha'))
         .pipe(browserSync.reload({ stream: true }));
     gulp.src(['haml/pers.haml'])
         .pipe(haml())
@@ -28,15 +24,10 @@ gulp.task('haml', function () {
 })
 
 gulp.task('sass', function(){
-    gulp.src(['sass/*.sass', '!sass/pers.sass', '!sass/lesha.sass'])
+    gulp.src(['sass/*.sass', '!sass/pers.sass'])
         .pipe(sass())
         .pipe(autoprefixer(['last 15 versions', '> 1%', 'ie 8', 'ie 7'], { cascade: true }))
         .pipe(gulp.dest('www/css'))
-        .pipe(browserSync.reload({stream: true}));
-    gulp.src(['sass/lesha.sass'])
-        .pipe(sass())
-        .pipe(autoprefixer(['last 15 versions', '> 1%', 'ie 8', 'ie 7'], { cascade: true }))
-        .pipe(gulp.dest('www/lesha'))
         .pipe(browserSync.reload({stream: true}));
     return gulp.src('sass/pers.sass')
         .pipe(sass())
